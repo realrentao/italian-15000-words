@@ -138,6 +138,38 @@ def main():
         page.click("#studyClose")
         page.wait_for_timeout(300)
 
+        # 6b. 学习模式：拼写（默写）
+        page.click("#studyBtn")
+        page.wait_for_timeout(300)
+        page.click('.stab[data-smode="spell"]')
+        page.wait_for_selector("#studyBody .spell-prompt", timeout=10000)
+        sp_zh = page.locator("#studyBody .sp-zh").count()
+        has_input = page.locator("#spellInput").count() > 0
+        has_zh_spk = page.locator("#studyBody .spell-prompt .spk").count() > 0
+        shot("08b_spell_render")
+        log("spell_render", f"拼写提示(中文{sp_zh})/输入框{has_input}/中文发音{has_zh_spk}",
+            ok=sp_zh > 0 and has_input and has_zh_spk)
+        # 正确路径：读取当前词条意语原词，填入并校验
+        ans1 = page.evaluate("() => (window.__SV.study.cur.es || '').trim()")
+        page.fill("#spellInput", ans1)
+        page.click("#spellCheck")
+        page.wait_for_selector("#spellFeedback.ok", timeout=5000)
+        ok_fb = page.locator("#spellFeedback.ok").count() > 0
+        shot("08b_spell_ok")
+        log("spell_correct", f"填入 '{ans1}'，反馈正确态 {ok_fb}", ok=ok_fb)
+        page.click("#sUnknown")  # 不认识 -> 下一张
+        page.wait_for_selector("#studyBody .spell-prompt", timeout=10000)
+        # 错误路径：读取当前词条，故意填错
+        ans2 = page.evaluate("() => (window.__SV.study.cur.es || '').trim()")
+        page.fill("#spellInput", ans2 + "zzz")
+        page.click("#spellCheck")
+        page.wait_for_selector("#spellFeedback.wrong", timeout=5000)
+        wrong_fb = page.locator("#spellFeedback.wrong").count() > 0
+        shot("08b_spell_wrong")
+        log("spell_wrong", f"填入错误词，反馈错误态 {wrong_fb}", ok=wrong_fb)
+        page.click("#studyClose")
+        page.wait_for_timeout(300)
+
         # 7. 标记学完
         done_before = page.text_content("#doneBtn") or ""
         page.click("#doneBtn")

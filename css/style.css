@@ -311,6 +311,17 @@ kbd{background:var(--bg);border:1px solid var(--line);border-bottom-width:2px;bo
 .study-done{text-align:center}
 .sd-title{font-size:24px;font-weight:700;margin-bottom:8px}
 .sd-stat{color:var(--tx2);font-size:14px}
+.spell-prompt{width:min(560px,94vw);text-align:center;margin-bottom:16px}
+.sp-zh{font-size:28px;font-weight:700;word-break:break-word}
+.sp-py{font-size:15px;color:var(--tx3);margin-top:6px}
+.spell-input{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.spell-input input{flex:1;max-width:360px;height:42px;font-size:18px;padding:0 14px;
+  border:1px solid var(--line);border-radius:9px;background:var(--bg);color:var(--tx)}
+.spell-input input:focus{outline:none;border-color:var(--red)}
+.spell-feedback{margin-top:14px;font-size:15px;min-height:22px}
+.spell-feedback.ok{color:var(--ok)}
+.spell-feedback.wrong{color:#E03B3B}
+.sp-ipa{font-style:italic;color:var(--tx3);font-size:13px;margin-left:4px}
 body.study-on .player{display:none}
 @media(max-width:760px){
   .study-sel{max-width:96px}

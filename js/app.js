@@ -752,7 +752,7 @@
     el("study").classList.remove("hidden");
     document.body.classList.add("study-on");
     buildStudyItems(study.scope, function (items) {
-      if (study.mode === "quiz") items = items.filter(function (x) { return x.kind !== "s"; });
+      if (study.mode === "quiz" || study.mode === "spell") items = items.filter(function (x) { return x.kind !== "s"; });
       if (study.dueOnly) {
         var due = items.filter(function (it) { var r = study.srs[it.uid]; return !r || r.due <= Date.now(); });
         if (due.length) items = due;
@@ -773,6 +773,7 @@
     if (study.i >= study.items.length) { renderStudyDone(); return; }
     study.cur = study.items[study.i];
     if (study.mode === "card") renderCard(study.cur, el("studyBody"), el("studyFoot"));
+    else if (study.mode === "spell") renderSpell(study.cur, el("studyBody"), el("studyFoot"));
     else renderQuiz(study.cur, el("studyBody"), el("studyFoot"));
   }
 
@@ -831,6 +832,41 @@
       };
     });
     foot.innerHTML = '<div class="study-prog">' + (study.i + 1) + ' / ' + study.total + '</div>';
+  }
+
+  function renderSpell(it, body, foot) {
+    body.onclick = null;
+    body.innerHTML = '<div class="spell-prompt"><div class="sp-zh">' + esc(it.zh) + '</div>'
+      + (it.py ? '<div class="sp-py">' + esc(it.py) + '</div>' : '')
+      + '<button class="cf-spk spk" data-a="' + AUDIO + it.az + '" title="中文发音">🔊 中文</button></div>'
+      + '<div class="spell-input"><input type="text" id="spellInput" placeholder="输入意语单词…" autocomplete="off">'
+      + '<button class="btn primary" id="spellCheck">检查</button></div>'
+      + '<div class="spell-feedback" id="spellFeedback"></div>';
+    var input = el("spellInput");
+    input.focus();
+    function check() {
+      var val = input.value.trim().toLowerCase();
+      var ans = (it.es || "").trim().toLowerCase();
+      var fb = el("spellFeedback");
+      if (!val) { fb.textContent = "请输入单词"; fb.className = "spell-feedback"; return; }
+      if (val === ans) {
+        fb.className = "spell-feedback ok";
+        fb.innerHTML = '✓ 正确 · <b>' + esc(it.es) + '</b>'
+          + (it.ipa ? ' <span class="sp-ipa">/' + esc(it.ipa) + '/</span>' : '');
+      } else {
+        fb.className = "spell-feedback wrong";
+        fb.innerHTML = '✗ 正确应为 <b>' + esc(it.es) + '</b>'
+          + (it.ipa ? ' <span class="sp-ipa">/' + esc(it.ipa) + '/</span>' : '');
+      }
+      say(AUDIO + it.ae, null);
+      foot.innerHTML = '<div class="study-prog">' + (study.i + 1) + ' / ' + study.total + '</div>'
+        + '<button class="btn s-unknown" id="sUnknown">不认识</button>'
+        + '<button class="btn primary s-known" id="sKnown">认识</button>';
+      el("sKnown").onclick = function () { grade(true); renderStudy(); };
+      el("sUnknown").onclick = function () { grade(false); renderStudy(); };
+    }
+    el("spellCheck").onclick = function (e) { e.stopPropagation(); check(); };
+    input.onkeydown = function (e) { if (e.key === "Enter") check(); };
   }
 
   function grade(known) {
