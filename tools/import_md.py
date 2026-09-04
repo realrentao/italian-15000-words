@@ -17,6 +17,7 @@ import json
 import os
 import re
 import sys
+from pypinyin import pinyin as _pinyin, Style
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO_DIR = os.path.join(ROOT, "audio")
@@ -30,6 +31,21 @@ POS_RE = re.compile(
     r"inter\.|num\.|art\.|agg\.|s\.m\.|s\.f\.|m\.inv|f\.inv|inv\.|pl\.)",
     re.I,
 )
+
+
+# ---------------- 中文拼音 ----------------
+def zh_py(zh):
+    """中文→带声调拼音（空格分隔），非汉字字符原样保留。填入 it[5] 拼音位。"""
+    if not zh:
+        return ""
+    try:
+        parts = _pinyin(zh, style=Style.TONE, heteronym=False)
+    except Exception:
+        return ""
+    s = " ".join(p[0] for p in parts).strip()
+    # 清理中文标点（，。、？！；：）前后的多余空格，如 "sān ， tā" → "sān，tā"
+    s = re.sub(r"\s*([，。、？！；：])\s*", r"\1", s)
+    return s
 
 
 # ---------------- 音频 ----------------
@@ -89,7 +105,7 @@ def parse_expansion(line):
     it, zh = split_word_zh(text)
     if not it:
         return None
-    return [zh, it, pos, "", "", "", ipa]
+    return [zh, it, pos, "", "", zh_py(zh), ipa]
 
 
 def parse_sentence(line):
@@ -106,7 +122,7 @@ def parse_sentence(line):
     if not it or not zh:
         return None
     zh = zh.rstrip("。").strip()
-    return [it, zh, src, "", "", "", ""]
+    return [it, zh, src, "", "", zh_py(zh), ""]
 
 
 def parse_md(path):
@@ -145,7 +161,7 @@ def parse_md(path):
             if not it or not zh:
                 continue
             ipa = ipa.strip().lstrip("[").rstrip("]").strip()
-            cur["w"].append([zh, it, pos, "", "", "", ipa])
+            cur["w"].append([zh, it, pos, "", "", zh_py(zh), ipa])
             continue
 
         if line.startswith("**") and line.rstrip().endswith("**"):
