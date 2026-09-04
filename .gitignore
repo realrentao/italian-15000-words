@@ -11,4 +11,5 @@ __pycache__/
 
 # Playwright 临时截图产物与临时脚本（已作为本轮验证产物呈现）
 _shots/
+_shots_prod/
 tools/_*_tmp.py
