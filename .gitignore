@@ -1,0 +1,7 @@
+# 项目本地记忆（不入库）
+.workbuddy/
+
+# 音频生成缓存/日志（非站点运行所需）
+audio/_gen.log
+audio/_index.json
+audio/_manifest.jsonl

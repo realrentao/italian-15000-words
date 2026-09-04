@@ -14,6 +14,37 @@
   var state = { g: 0, p: 0, s: 0, done: {}, theme: "light" };
   var FLAT = [];            // 全局 Parte 顺序 [{g,p,gid,no,name}]
   var el = function (id) { return document.getElementById(id); };
+
+  /* 词性 → 中文（同时覆盖意语缩写 m./f./n.f./v.t./adj./inv. 与原笔记直接写的中文 形/名/介/副/固/短） */
+  var POS_ZH = {
+    "n":"名词","s":"名词","m":"阳性名词","f":"阴性名词",
+    "n.m":"阳性名词","n.f":"阴性名词","s.m":"阳性名词","s.f":"阴性名词",
+    "adj":"形容词","agg":"形容词",
+    "v":"动词","v.t":"及物动词","v.i":"不及物动词",
+    "v.tr":"及物动词","v.intr":"不及物动词","v.rifl":"反身动词","i":"不及物动词",
+    "avv":"副词","adv":"副词","prep":"介词","cong":"连词",
+    "art":"冠词","pron":"代词","inter":"叹词","escl":"感叹词","loc":"短语","pl":"复数","inv":"不变",
+    "形":"形容词","名":"名词","介":"介词","副":"副词","固":"固定搭配","短":"短语"
+  };
+  function posZh(p) {
+    if (!p) return "";
+    function look(s) {
+      if (POS_ZH[s] != null) return POS_ZH[s];
+      var t = s.replace(/\.+$/, ""); if (POS_ZH[t] != null) return POS_ZH[t];
+      var k = s.replace(/\./g, "").toLowerCase(); if (POS_ZH[k] != null) return POS_ZH[k];
+      return null;
+    }
+    function one(tok) {
+      tok = tok.trim();
+      var a = look(tok); if (a) return a;
+      if (tok.indexOf(".") >= 0) {
+        var mp = tok.split(".").filter(Boolean).map(look);
+        if (mp.length && mp.every(function (m) { return m != null; })) return mp.join("·");
+      }
+      return tok;
+    }
+    return p.trim().split(/\s+/).map(one).join("·");
+  }
   var content = el("content");
 
   function buildFlat() {
@@ -179,7 +210,9 @@
         + '<span class="es" data-a="' + AUDIO + it[3] + '">' + esc(it[1]) + '</span>'
         + (it[6] ? '<span class="ipa pron" title="意语音标">/' + esc(it[6]) + '/</span>' : '')
         + '<span class="pos">' + esc(it[2]) + '</span></div>'
-        + '<div class="zh" data-a="' + AUDIO + it[4] + '">' + esc(it[0]) + '</div>'
+        + '<div class="zh" data-a="' + AUDIO + it[4] + '">' + esc(it[0])
+        + (it[2] ? ' <span class="pos pos-zh">' + esc(posZh(it[2])) + '</span>' : '')
+        + '</div>'
         + (it[5] ? '<div class="py pron">' + esc(it[5]) + '</div>' : '')
         + '</div>'
         + '<button class="spk" data-a="' + AUDIO + it[3] + '" title="意语发音">🔊</button>'
