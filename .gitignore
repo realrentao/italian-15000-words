@@ -5,3 +5,6 @@
 audio/_gen.log
 audio/_index.json
 audio/_manifest.jsonl
+
+# Python 缓存
+__pycache__/
