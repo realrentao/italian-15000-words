@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[15]={"gid": 15, "no": 5, "name": "人与人之间的关系", "gname": "人物与行为", "secs": [{"no": 1, "name": "亲属关系", "w": [], "s": [], "e": []}, {"no": 2, "name": "恋人与朋友", "w": [], "s": [], "e": []}, {"no": 3, "name": "敌人", "w": [], "s": [], "e": []}, {"no": 4, "name": "结婚", "w": [], "s": [], "e": []}]};

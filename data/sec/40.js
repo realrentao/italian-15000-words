@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[40]={"gid": 40, "no": 7, "name": "法院", "gname": "社会", "secs": [{"no": 1, "name": "法院", "w": [], "s": [], "e": []}, {"no": 2, "name": "法院的各种判决", "w": [], "s": [], "e": []}, {"no": 3, "name": "官司诉讼", "w": [], "s": [], "e": []}]};

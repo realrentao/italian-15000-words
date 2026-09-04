@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[38]={"gid": 38, "no": 5, "name": "传媒", "gname": "社会", "secs": [{"no": 1, "name": "不同媒介", "w": [], "s": [], "e": []}, {"no": 2, "name": "记者招待会", "w": [], "s": [], "e": []}]};

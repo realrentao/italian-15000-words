@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[9]={"gid": 9, "no": 5, "name": "常见商店", "gname": "生活设施", "secs": [{"no": 1, "name": "常见店铺", "w": [], "s": [], "e": []}, {"no": 2, "name": "花店", "w": [], "s": [], "e": []}, {"no": 3, "name": "眼镜店", "w": [], "s": [], "e": []}, {"no": 4, "name": "便利店", "w": [], "s": [], "e": []}]};

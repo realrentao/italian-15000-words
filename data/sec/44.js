@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[44]={"gid": 44, "no": 2, "name": "环境保护", "gname": "科技与环境", "secs": [{"no": 1, "name": "环保", "w": [], "s": [], "e": []}, {"no": 2, "name": "环境污染", "w": [], "s": [], "e": []}]};

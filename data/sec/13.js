@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[13]={"gid": 13, "no": 3, "name": "人的情绪", "gname": "人物与行为", "secs": [{"no": 1, "name": "正面情绪", "w": [], "s": [], "e": []}, {"no": 2, "name": "偏负面情绪", "w": [], "s": [], "e": []}]};

@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[37]={"gid": 37, "no": 4, "name": "宗教信仰", "gname": "社会", "secs": [{"no": 1, "name": "不同信仰", "w": [], "s": [], "e": []}, {"no": 2, "name": "宗教活动", "w": [], "s": [], "e": []}]};

@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[12]={"gid": 12, "no": 2, "name": "人身体的行为", "gname": "人物与行为", "secs": [{"no": 1, "name": "说话", "w": [], "s": [], "e": []}, {"no": 2, "name": "头部与手的动作", "w": [], "s": [], "e": []}, {"no": 3, "name": "身体的动作", "w": [], "s": [], "e": []}]};

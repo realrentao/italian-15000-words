@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[16]={"gid": 16, "no": 1, "name": "不同学校", "gname": "校园", "secs": [{"no": 1, "name": "各种学校", "w": [], "s": [], "e": []}, {"no": 2, "name": "各种教育", "w": [], "s": [], "e": []}, {"no": 3, "name": "各种考试", "w": [], "s": [], "e": []}]};

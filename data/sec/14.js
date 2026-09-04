@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[14]={"gid": 14, "no": 4, "name": "人类交流的方式", "gname": "人物与行为", "secs": [{"no": 1, "name": "手机", "w": [], "s": [], "e": []}, {"no": 2, "name": "电脑", "w": [], "s": [], "e": []}, {"no": 3, "name": "网站", "w": [], "s": [], "e": []}, {"no": 4, "name": "博客与邮件", "w": [], "s": [], "e": []}]};

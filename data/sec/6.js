@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[6]={"gid": 6, "no": 2, "name": "在邮局", "gname": "生活设施", "secs": [{"no": 1, "name": "邮局", "w": [], "s": [], "e": []}, {"no": 2, "name": "各种区域名称", "w": [], "s": [], "e": []}, {"no": 3, "name": "邮票信封", "w": [], "s": [], "e": []}, {"no": 4, "name": "包裹快递", "w": [], "s": [], "e": []}]};

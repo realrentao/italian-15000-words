@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>意大利语单词随身背 · 互动学习站</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2710.67%27 height=%2732%27 fill=%27%23008C45%27/%3E%3Crect x=%2710.67%27 width=%2710.66%27 height=%2732%27 fill=%27%23FFFFFF%27/%3E%3Crect x=%2721.33%27 width=%2710.67%27 height=%2732%27 fill=%27%23CE2B37%27/%3E%3Ctext x=%2716%27 y=%2722%27 text-anchor=%27middle%27 font-family=%27serif%27 font-size=%2715%27 fill=%27%23008C45%27 font-weight=%27bold%27%3Eit%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="目录">☰</button>
+  <div class="brand">
+    <span class="flag"><i></i><i></i><i></i></span>
+    <div class="brand-txt">
+      <b id="bookTitle">意大利语单词随身背</b>
+      <small id="bookAuthor"></small>
+    </div>
+  </div>
+
+  <div class="search-box">
+    <input id="search" type="search" placeholder="搜索意语单词或中文…" autocomplete="off">
+    <button class="icon-btn" id="searchClear" title="清空">✕</button>
+  </div>
+
+  <div class="top-actions">
+    <button class="icon-btn" id="studyBtn" title="学习模式：闪卡 / 测验（间隔重复）">学</button>
+    <button class="icon-btn" id="pronBtn" title="显示/隐藏 拼音与音标">拼</button>
+    <button class="icon-btn" id="themeBtn" title="切换主题">◐</button>
+    <button class="icon-btn" id="helpBtn" title="说明">?</button>
+  </div>
+</header>
+
+<div class="layout">
+  <!-- 侧栏目录 -->
+  <aside class="sidebar" id="sidebar">
+    <div class="side-head">
+      <span>目录</span>
+      <span class="side-count" id="sideCount"></span>
+    </div>
+    <nav class="toc" id="toc"></nav>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <!-- 主区 -->
+  <main class="main" id="main">
+    <div id="content"></div>
+    <div id="searchResults" class="search-results hidden"></div>
+  </main>
+</div>
+
+<!-- 全盘播放控制条 -->
+<div class="player" id="player">
+  <button class="icon-btn" id="menuBtn2" title="目录">☰</button>
+
+  <div class="pl-scope">
+    <select id="scopeSel" title="播放范围">
+      <option value="sec">本节</option>
+      <option value="parte">本大类</option>
+      <option value="all">全书</option>
+    </select>
+  </div>
+
+  <button class="play-btn" id="playBtn" title="播放 / 暂停（空格）">
+    <span class="ico-play">▶</span><span class="ico-pause">❚❚</span>
+  </button>
+  <button class="icon-btn" id="prevBtn" title="上一条">⏮</button>
+  <button class="icon-btn" id="nextBtn" title="下一条">⏭</button>
+
+  <div class="pl-progress">
+    <div class="pl-bar"><i id="plBar"></i></div>
+    <div class="pl-label" id="plLabel">未播放</div>
+  </div>
+
+  <div class="pl-ctrl">
+    <select id="modeSel" title="播放顺序">
+      <option value="it-zh">意→中（逐条）</option>
+      <option value="all-it-zh">全部意语→全部中文</option>
+      <option value="it-only">仅意语</option>
+      <option value="zh-only">仅中文</option>
+    </select>
+    <select id="rateSel" title="语速">
+      <option value="0.7">0.7×</option>
+      <option value="0.85">0.85×</option>
+      <option value="1" selected>1.0×</option>
+      <option value="1.15">1.15×</option>
+    </select>
+    <select id="gapSel" title="条目间隔">
+      <option value="0">无间隔</option>
+      <option value="400" selected>0.4 秒</option>
+      <option value="900">0.9 秒</option>
+      <option value="1800">1.8 秒</option>
+    </select>
+    <label class="chk"><input type="checkbox" id="loopChk"><span>循环</span></label>
+  </div>
+</div>
+
+<!-- 学习模式（闪卡 / 测验 + SRS） -->
+<div class="study hidden" id="study">
+  <div class="study-bar">
+    <button class="icon-btn" id="studyClose" title="退出学习">✕</button>
+    <div class="stab-group">
+      <button class="stab active" data-smode="card">闪卡</button>
+      <button class="stab" data-smode="quiz">测验</button>
+    </div>
+    <select id="studyScope" class="study-sel" title="学习范围">
+      <option value="sec">本节</option>
+      <option value="parte">本大类</option>
+      <option value="all">全书</option>
+    </select>
+    <label class="chk"><input type="checkbox" id="studyShuffle" checked><span>打乱</span></label>
+    <label class="chk"><input type="checkbox" id="studyDue"><span>仅到期</span></label>
+  </div>
+  <div class="study-body" id="studyBody"></div>
+  <div class="study-foot" id="studyFoot"></div>
+</div>
+
+<!-- 说明弹窗 -->
+<div class="modal hidden" id="helpModal">
+  <div class="modal-card">
+    <h3>使用说明</h3>
+    <ul>
+      <li><b>全盘播放</b>：选好范围（本节 / 本大类 / 全书）与顺序，点 ▶ 即可连续朗读。默认「意→中（逐条）」= 单词意语 → 中文释义 → 下一个单词。</li>
+      <li><b>点读</b>：点击任意意语单词或中文释义可单独发音；例句的意语句与中文翻译也可分别点读。</li>
+      <li><b>拼音与音标</b>：每条中文带<b>拼音</b>、每条意语带<b>IPA 音标</b>；点右上角「拼」可整体隐藏/显示，方便自测。</li>
+      <li><b>快捷键</b>：<kbd>空格</kbd> 播放/暂停，<kbd>←</kbd> <kbd>→</kbd> 上一条/下一条，<kbd>/</kbd> 聚焦搜索。</li>
+      <li><b>进度</b>：右上角「学完」可标记小节，状态存本地浏览器。</li>
+      <li>站内按「大篇 → 大类 → 小节」三级结构组织（8 大篇 / 47 大类 / 389 小节）。各小节内容当前为空，待你在 <code>data/sec/&lt;gid&gt;.js</code> 对应小节填入 终极分类词(w) / 经典实用句(s) / 词汇大拓展(e) 后，即可正常学习、播放与测验。</li>
+    </ul>
+    <div class="prog-tools">
+      <span class="pt-label">学习进度：</span>
+      <button class="btn" id="exportBtn">导出</button>
+      <label class="btn" for="importFile">导入</label>
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+    </div>
+    <button class="btn primary" id="helpClose">知道了</button>
+  </div>
+</div>
+
+<script src="data/meta.js"></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

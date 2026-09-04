@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[43]={"gid": 43, "no": 1, "name": "科技", "gname": "科技与环境", "secs": [{"no": 1, "name": "科技", "w": [], "s": [], "e": []}, {"no": 2, "name": "基因", "w": [], "s": [], "e": []}, {"no": 3, "name": "数码", "w": [], "s": [], "e": []}]};

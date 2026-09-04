@@ -1,0 +1,1 @@
+window.BOOK_DATA=window.BOOK_DATA||{};window.BOOK_DATA[39]={"gid": 39, "no": 6, "name": "法律与犯罪", "gname": "社会", "secs": [{"no": 1, "name": "法律", "w": [], "s": [], "e": []}, {"no": 2, "name": "犯罪", "w": [], "s": [], "e": []}, {"no": 3, "name": "犯罪行为", "w": [], "s": [], "e": []}, {"no": 4, "name": "监狱", "w": [], "s": [], "e": []}]};
