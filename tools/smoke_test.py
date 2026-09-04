@@ -100,13 +100,15 @@ def main():
 
         # 4. 点读按钮
         mp3_before = set(mp3_status.keys())
-        page.locator(".spk").first.click()
-        page.wait_for_timeout(800)
+        with page.expect_response(lambda r: r.url.endswith(".mp3"), timeout=5000) as resp_info:
+            page.locator(".spk").first.click()
+        mp3_resp = resp_info.value
+        page.wait_for_timeout(200)
         new_mp3 = {u: mp3_status[u] for u in mp3_status if u not in mp3_before}
+        statuses = [mp3_resp.status] + [st for st in new_mp3.values()]
         shot("04_spk")
-        spk_ok = any(st == 200 for st in new_mp3.values()) if new_mp3 else False
-        # 头less 环境可能不真正发起音频请求，但至少无报错
-        log("spk", f"新增 mp3 请求 {len(new_mp3)} 个，200 OK {spk_ok}", ok=len(request_failures) == 0)
+        spk_ok = any(st in (200, 206) for st in statuses)
+        log("spk", f"mp3 响应状态 {statuses}，OK {spk_ok}", ok=len(request_failures) == 0 and spk_ok)
 
         # 5. 全盘播放
         page.click("#playBtn")
@@ -119,7 +121,24 @@ def main():
         page.click("#playBtn")  # 暂停
         page.wait_for_timeout(300)
 
-        # 6. 标记学完
+        # 6. 学习模式：闪卡 + 测验
+        page.click("#studyBtn")
+        page.wait_for_selector("#studyBody .card-face", timeout=10000)
+        shot("06_flashcard")
+        log("flashcard", "闪卡正面渲染", ok=page.locator("#studyBody .card-face").count() > 0)
+        page.click("#sFlip")
+        page.wait_for_selector("#studyBody .card-face.back", timeout=5000)
+        shot("07_flashcard_back")
+        log("flashcard_back", "闪卡背面（中文+拼音）渲染", ok=page.locator("#studyBody .card-face.back").count() > 0)
+        page.click('.stab[data-smode="quiz"]')
+        page.wait_for_selector("#studyBody .quiz-opts", timeout=10000)
+        shot("08_quiz")
+        qopts = page.locator("#studyBody .qopt").count()
+        log("quiz", f"测验四选一渲染，选项 {qopts} 个", ok=qopts == 4)
+        page.click("#studyClose")
+        page.wait_for_timeout(300)
+
+        # 7. 标记学完
         done_before = page.text_content("#doneBtn") or ""
         page.click("#doneBtn")
         page.wait_for_timeout(300)
