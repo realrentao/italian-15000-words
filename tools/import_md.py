@@ -114,7 +114,7 @@ def parse_sentence(line):
     if not text:
         return None
     src = ""
-    m = re.search(u"——\s*[《<]([^》>]*)[》>]\s*$", text)
+    m = re.search(r"——\s*[《<]([^》>]*)[》>]\s*$", text)
     if m:
         src = m.group(1).strip()
         text = text[:m.start()].strip()
