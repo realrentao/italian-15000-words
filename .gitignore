@@ -8,3 +8,7 @@ audio/_manifest.jsonl
 
 # Python 缓存
 __pycache__/
+
+# Playwright 临时截图产物与临时脚本（已作为本轮验证产物呈现）
+_shots/
+tools/_*_tmp.py
