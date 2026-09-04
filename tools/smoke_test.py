@@ -144,7 +144,7 @@ def main():
         page.wait_for_timeout(300)
         done_after = page.text_content("#doneBtn") or ""
         ls_done = page.evaluate("() => localStorage.getItem('sv15000_done') || '{}'")
-        shot("06_done")
+        shot("09_done")
         log("done", f"学完按钮: {done_before} -> {done_after}", ok=done_after == "✓ 已学完")
 
         browser.close()
