@@ -156,25 +156,19 @@ def parse_raw(path):
 
 
 def main():
-    parsed = parse_raw(RAW)
-    data = im.load_sec_js(GID)
-    by_no = {x["no"]: x for x in data["secs"]}
-
+    # 仅保留有内容的节，避免把站点骨架里的空占位节(如"食品加工")带入
+    parsed = [p for p in parse_raw(RAW) if (p["w"] or p["s"] or p["e"])]
+    data = im.load_sec_js(GID)          # 仅取顶层 meta(gid/no/name/gname)
     idx = im.load_audio_index()
     new_items = []
     for p in parsed:
-        tgt = by_no.get(p["no"])
-        if tgt is None:
-            print("  ! 跳过 Section %d（站点 Parte 3 无此节）" % p["no"])
-            continue
-        tgt["w"], tgt["s"], tgt["e"] = p["w"], p["s"], p["e"]
         for kind, f_it, f_zh in (("w", 1, 0), ("e", 1, 0), ("s", 0, 1)):
-            for row in tgt[kind]:
+            for row in p[kind]:
                 row[3] = im.audio_for(idx, "it", row[f_it], new_items)
                 row[4] = im.audio_for(idx, "zh", row[f_zh], new_items)
         print("  Section %-2d %-16s 词%-3d 句%-2d 拓%-2d"
-              % (p["no"], p["name"], len(tgt["w"]), len(tgt["s"]), len(tgt["e"])))
-
+              % (p["no"], p["name"], len(p["w"]), len(p["s"]), len(p["e"])))
+    data["secs"] = parsed               # 整体替换，丢弃骨架空节
     im.write_sec_js(GID, data)
     im.save_audio_index(idx)
     with open(MANIFEST_PATH, "a", encoding="utf-8") as f:
