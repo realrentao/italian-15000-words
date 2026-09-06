@@ -146,6 +146,11 @@ button{cursor:pointer;background:none;border:none}
   color:var(--tx3);font-size:13px;flex:0 0 auto}
 .row .spk:hover{background:var(--bg);color:var(--red)}
 .row .spk.on{color:var(--red)}
+/* 阴阳合写词条的阴性形态（♀ nona），点击可单独发音 */
+.row .fem-pill{font-size:12px;color:var(--gold);background:var(--gold-l);
+  border:1px solid var(--gold);border-radius:4px;padding:0 5px;cursor:pointer;flex:0 0 auto}
+.row .fem-pill:hover{filter:brightness(.94)}
+.card-face .cf-fem{font-size:13px;color:var(--gold);margin-top:8px}
 
 /* 拼音 / 音标 */
 .row .ipa{font-size:12px;color:var(--tx3);font-style:italic;margin-left:3px;

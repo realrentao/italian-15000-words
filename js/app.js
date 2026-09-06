@@ -208,6 +208,9 @@
       h += '<div class="row" id="' + id + '"><span class="idx">' + (i + 1) + '</span>'
         + '<div class="body"><div class="line-es">'
         + '<span class="es" data-a="' + AUDIO + it[3] + '">' + esc(it[1]) + '</span>'
+        // 阴阳合写词条：显示阴性形态，点击单独发音
+        + (it[7] ? '<span class="fem-pill" data-a="' + AUDIO + it[7] + '" title="阴性形态单独发音">♀ '
+            + esc(it[8] || "") + '</span>' : '')
         + (it[6] ? '<span class="ipa pron" title="意语音标">/' + esc(it[6]) + '/</span>' : '')
         + '<span class="pos">' + esc(it[2]) + '</span></div>'
         + '<div class="zh" data-a="' + AUDIO + it[4] + '">' + esc(it[0])
@@ -215,7 +218,10 @@
         + '</div>'
         + (it[5] ? '<div class="py pron">' + esc(it[5]) + '</div>' : '')
         + '</div>'
-        + '<button class="spk" data-a="' + AUDIO + it[3] + '" title="意语发音">🔊</button>'
+        // 有阴性形态时 🔊 连播「阳性 → 阴性」
+        + '<button class="spk" data-a="' + AUDIO + it[3] + '"'
+        + (it[7] ? ' data-a2="' + AUDIO + it[7] + '" title="意语发音（阳性→阴性）"' : ' title="意语发音"')
+        + '>🔊</button>'
         + '<button class="spk" data-a="' + AUDIO + it[4] + '" title="中文发音">汉</button></div>';
     });
     return h + '</div>';
@@ -294,14 +300,15 @@
 
   function unitsOf(gid, sec) {
     var out = [];
+    // af = 阴性（第二形态）音频，仅 "X, a" 这类阴阳合写词条有
     sec.w.forEach(function (it, i) {
-      out.push({ id: uid(gid, sec.no, "w", i), kind: "w", es: it[1], zh: it[0], ae: it[3], az: it[4] });
+      out.push({ id: uid(gid, sec.no, "w", i), kind: "w", es: it[1], zh: it[0], ae: it[3], az: it[4], af: it[7] || "" });
     });
     sec.s.forEach(function (it, i) {
-      out.push({ id: uid(gid, sec.no, "s", i), kind: "s", es: it[0], zh: it[1], ae: it[3], az: it[4] });
+      out.push({ id: uid(gid, sec.no, "s", i), kind: "s", es: it[0], zh: it[1], ae: it[3], az: it[4], af: "" });
     });
     sec.e.forEach(function (it, i) {
-      out.push({ id: uid(gid, sec.no, "e", i), kind: "e", es: it[1], zh: it[0], ae: it[3], az: it[4] });
+      out.push({ id: uid(gid, sec.no, "e", i), kind: "e", es: it[1], zh: it[0], ae: it[3], az: it[4], af: it[7] || "" });
     });
     return out;
   }
@@ -333,18 +340,24 @@
     }
   }
 
+  // 阳性（原形）音频；有阴性形态时紧随其后播阴性
+  function pushIt(L, u, lang) {
+    L.push({ src: AUDIO + u.ae, uid: u.id, lang: lang });
+    if (u.af) L.push({ src: AUDIO + u.af, uid: u.id, lang: lang });
+  }
+
   function expand() {
     var m = mode(), L = [];
     if (m === "it-zh") {
       P.units.forEach(function (u) {
-        L.push({ src: AUDIO + u.ae, uid: u.id, lang: "it" });
+        pushIt(L, u, "it");
         L.push({ src: AUDIO + u.az, uid: u.id, lang: "zh" });
       });
     } else if (m === "all-it-zh") {
-      P.units.forEach(function (u) { L.push({ src: AUDIO + u.ae, uid: u.id, lang: "it" }); });
+      P.units.forEach(function (u) { pushIt(L, u, "it"); });
       P.units.forEach(function (u) { L.push({ src: AUDIO + u.az, uid: u.id, lang: "zh" }); });
     } else if (m === "it-only") {
-      P.units.forEach(function (u) { L.push({ src: AUDIO + u.ae, uid: u.id, lang: "it" }); });
+      P.units.forEach(function (u) { pushIt(L, u, "it"); });
     } else {
       P.units.forEach(function (u) { L.push({ src: AUDIO + u.az, uid: u.id, lang: "zh" }); });
     }
@@ -479,13 +492,34 @@
     if (pr && pr.catch) pr.catch(function () { if (btn) btn.classList.remove("on"); });
   }
 
+  /* 依次播放多段音频（用于阴阳两种形态连读） */
+  function saySeq(srcs, btn) {
+    var i = 0, a = new Audio();
+    function fin() { if (btn) btn.classList.remove("on"); }
+    function next() {
+      if (i >= srcs.length) { fin(); return; }
+      a.src = srcs[i++];
+      a.playbackRate = rate();
+      var pr = a.play();
+      if (pr && pr.catch) pr.catch(function () { next(); });
+    }
+    a.onended = function () { next(); };
+    a.onerror = function () { next(); };
+    if (btn) btn.classList.add("on");
+    next();
+  }
+
   /* 点读（事件委托） */
   document.addEventListener("click", function (e) {
     var t = e.target && e.target.closest ? e.target.closest("[data-a]") : null;
     if (!t) return;
     var src = t.getAttribute("data-a");
     if (!src) return;
-    if (t.classList.contains("spk")) { e.stopPropagation(); say(src, t); }
+    if (t.classList.contains("spk")) {
+      e.stopPropagation();
+      var a2 = t.getAttribute("data-a2");
+      if (a2) saySeq([src, a2], t); else say(src, t);
+    }
     else say(src, null);
   });
 
@@ -733,7 +767,8 @@
             out.push({
               uid: uid(p.gid, p.sec.no, kind, i), kind: kind,
               es: it[(kind === "s" ? 0 : 1)], zh: it[(kind === "s" ? 1 : 0)],
-              ae: it[3], az: it[4], py: it[5], ipa: it[6]
+              ae: it[3], az: it[4], py: it[5], ipa: it[6],
+              af: (kind === "s" ? "" : (it[7] || "")), fem: (kind === "s" ? "" : (it[8] || ""))
             });
           });
         });
@@ -781,7 +816,10 @@
     body.innerHTML = '<div class="card-face front">'
       + '<div class="cf-es">' + esc(it.es) + '</div>'
       + (it.ipa ? '<div class="cf-ipa">/' + esc(it.ipa) + '/</div>' : '')
-      + '<button class="cf-spk spk" data-a="' + AUDIO + it.ae + '" title="意语发音">🔊 意语</button>'
+      + '<button class="cf-spk spk" data-a="' + AUDIO + it.ae + '"'
+      + (it.af ? ' data-a2="' + AUDIO + it.af + '" title="意语发音（阳性→阴性）"' : ' title="意语发音"')
+      + '>🔊 意语</button>'
+      + (it.af ? '<div class="cf-fem">♀ ' + esc(it.fem || "") + '</div>' : '')
       + '<div class="cf-hint">点击卡片或按空格翻面</div></div>';
     body.onclick = function (e) { if (e.target.closest(".spk")) return; flipCard(it, body, foot); };
     foot.innerHTML = '<div class="study-prog">' + (study.i + 1) + ' / ' + study.total + '</div>'
@@ -826,7 +864,7 @@
           if (x.getAttribute("data-es") === it.es) x.classList.add("correct");
           else if (x === b) x.classList.add("wrong");
         });
-        say(AUDIO + it.ae, null);
+        if (it.af) saySeq([AUDIO + it.ae, AUDIO + it.af], null); else say(AUDIO + it.ae, null);
         grade(correct);
         setTimeout(renderStudy, 1200);
       };
@@ -858,7 +896,7 @@
         fb.innerHTML = '✗ 正确应为 <b>' + esc(it.es) + '</b>'
           + (it.ipa ? ' <span class="sp-ipa">/' + esc(it.ipa) + '/</span>' : '');
       }
-      say(AUDIO + it.ae, null);
+      if (it.af) saySeq([AUDIO + it.ae, AUDIO + it.af], null); else say(AUDIO + it.ae, null);
       foot.innerHTML = '<div class="study-prog">' + (study.i + 1) + ' / ' + study.total + '</div>'
         + '<button class="btn s-unknown" id="sUnknown">不认识</button>'
         + '<button class="btn primary s-known" id="sKnown">认识</button>';
