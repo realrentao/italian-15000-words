@@ -18,9 +18,20 @@ def norm(it):
     x = re.sub(r"[.,;:!?()\[\]'\"\s]+", "", x)
     return x
 
+def filled_gids():
+    """从 meta.js 取已有内容的分册 gid（自动跟随新增 Parte）"""
+    raw = open(os.path.join(ROOT, "data", "meta.js"), encoding="utf-8").read()
+    m = json.JSONDecoder().raw_decode(raw[raw.index("=") + 1:])[0]
+    out = []
+    for g in m["grupos"]:
+        for pt in g["partes"]:
+            if sum(sc["w"] + sc["s"] + sc["e"] for sc in pt["secs"]) > 0:
+                out.append(pt["gid"])
+    return sorted(set(out))
+
 def main():
     total_dup_rows = 0
-    for gid in range(0, 5):  # 已填充的 Parte 0-4
+    for gid in filled_gids():
         data = load_sec_js(gid)
         if not data:
             continue

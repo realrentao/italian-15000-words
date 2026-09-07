@@ -81,10 +81,21 @@ def dedupe_sec(sec):
     new_e.sort(key=lambda x: x[0])
     return [r for _, r in new_w], [r for _, r in new_e], changes
 
+def filled_gids():
+    """从 meta.js 取已有内容的分册 gid（自动跟随新增 Parte）"""
+    raw = open(os.path.join(ROOT, "data", "meta.js"), encoding="utf-8").read()
+    m = json.JSONDecoder().raw_decode(raw[raw.index("=") + 1:])[0]
+    out = []
+    for g in m["grupos"]:
+        for pt in g["partes"]:
+            if sum(sc["w"] + sc["s"] + sc["e"] for sc in pt["secs"]) > 0:
+                out.append(pt["gid"])
+    return sorted(set(out))
+
 def main():
     log_lines = []
     grand_removed = 0
-    for gid in range(0, 5):
+    for gid in filled_gids():
         data = load_sec_js(gid)
         if not data:
             continue
@@ -111,7 +122,7 @@ def main():
     spec = importlib.util.spec_from_file_location("import_md", sys_path)
     im = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(im)
-    for gid in range(0, 5):
+    for gid in filled_gids():
         data = load_sec_js(gid)
         im.sync_meta(gid, data)
     print("已同步 data/meta.js 统计。")

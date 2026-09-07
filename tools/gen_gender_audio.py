@@ -51,13 +51,25 @@ def expand_forms(it):
     return base, fem
 
 
+def filled_gids():
+    """从 meta.js 取已有内容的分册 gid（自动跟随新增 Parte）"""
+    raw = open(os.path.join(ROOT, "data", "meta.js"), encoding="utf-8").read()
+    m = json.JSONDecoder().raw_decode(raw[raw.index("=") + 1:])[0]
+    out = []
+    for g in m["grupos"]:
+        for pt in g["partes"]:
+            if sum(sc["w"] + sc["s"] + sc["e"] for sc in pt["secs"]) > 0:
+                out.append(pt["gid"])
+    return sorted(set(out))
+
+
 def main():
     apply = "--apply" in sys.argv
     idx = im.load_audio_index() if apply else {"counter": 0, "map": {}}
     new_items = []
     total = 0
     rows = []
-    for gid in range(0, 5):
+    for gid in filled_gids():
         data = im.load_sec_js(gid)
         if not data:
             continue
