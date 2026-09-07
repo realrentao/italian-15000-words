@@ -296,6 +296,7 @@
   function rate() { return parseFloat(el("rateSel").value) || 1; }
   function gapMs() { return parseInt(el("gapSel").value, 10) || 0; }
   function loopOn() { return el("loopChk").checked; }
+  function shuffleOn() { var c = el("shuffleChk"); return !!(c && c.checked); }
   function mode() { return el("modeSel").value; }
 
   function unitsOf(gid, sec) {
@@ -364,7 +365,10 @@
     P.list = L; P.i = 0;
   }
 
-  function buildUnits(scope, cb) { collect(scope, function (u) { P.units = u; if (cb) cb(); }); }
+  // 勾选「随机」时打乱词条顺序（只在这里洗一次，切播放模式不会重排）
+  function buildUnits(scope, cb) {
+    collect(scope, function (u) { P.units = shuffleOn() ? shuffle(u) : u; if (cb) cb(); });
+  }
 
   function updateProgress() {
     var it = P.list[P.i];
@@ -404,7 +408,11 @@
   function step() {
     if (!P.playing) return;
     if (P.i >= P.list.length) {
-      if (loopOn()) P.i = 0; else { stopPlay(true); return; }
+      if (loopOn()) {
+        // 循环时若开了随机，重新洗牌，避免每轮顺序都一样
+        if (shuffleOn()) { shuffle(P.units); expand(); }
+        P.i = 0;
+      } else { stopPlay(true); return; }
     }
     var it = P.list[P.i];
     if (!it) { stopPlay(true); return; }
@@ -630,6 +638,12 @@
     el("nextBtn").onclick = function () { jumpUnit(1); };
     el("modeSel").onchange = function () { P.dirty = true; expand(); P.i = 0; updateProgress(); };
     el("scopeSel").onchange = function () { P.dirty = true; pausePlay(); P.i = 0; updateProgress(); };
+    el("shuffleChk").onchange = function () {
+      var was = P.playing;
+      P.dirty = true; P.i = 0;
+      if (was) { pausePlay(); startPlay(); }   // 重新收集并按新顺序洗牌
+      else updateProgress();
+    };
     el("rateSel").onchange = function () {
       P.players.forEach(function (a) { a.playbackRate = rate(); });
     };
