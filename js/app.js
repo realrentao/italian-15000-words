@@ -93,6 +93,13 @@
     s.onerror = function () { s.remove(); cb(null); };
     document.head.appendChild(s);
   }
+  /* 按需加载若干 Parte（本篇/全书共用） */
+  function loadPartes(list, cb) {
+    var rest = list.filter(function (pt) { return !DATA[pt.gid]; });
+    if (!rest.length) { cb(); return; }
+    var n = rest.length;
+    rest.forEach(function (pt) { loadParte(pt.gid, function () { if (--n <= 0) cb(); }); });
+  }
   function loadAll(cb) {
     var rest = FLAT.filter(function (f) { return !DATA[f.gid]; });
     if (!rest.length) { cb(); return; }
@@ -329,6 +336,16 @@
         d.secs.forEach(function (s) { out = out.concat(unitsOf(d.gid, s)); });
         cb(out);
       });
+    } else if (scope === "grupo") {
+      var pt2 = META.grupos[state.g].partes.slice();
+      loadPartes(pt2, function () {
+        var out = [];
+        pt2.forEach(function (pt) {
+          var d = DATA[pt.gid]; if (!d) return;
+          d.secs.forEach(function (s) { out = out.concat(unitsOf(pt.gid, s)); });
+        });
+        cb(out);
+      });
     } else {
       loadAll(function () {
         var out = [];
@@ -437,7 +454,13 @@
   }
 
   function doStart() {
-    if (!P.list.length) return;
+    if (!P.list.length) {
+      P.playing = false;
+      el("playBtn").classList.remove("playing");
+      var sc = el("scopeSel").value, nm = { all: "全书", grupo: "本篇", parte: "本大类", sec: "本节" }[sc] || "该范围";
+      el("plLabel").textContent = nm + "暂无内容";
+      return;
+    }
     if (P.i >= P.list.length) P.i = 0;
     P.playing = true;
     el("playBtn").classList.add("playing");
@@ -449,6 +472,7 @@
     if (P.dirty || !P.list.length) {
       var sc = el("scopeSel").value;
       el("plLabel").textContent = sc === "all" ? "正在准备全书播放…"
+        : sc === "grupo" ? "正在准备本篇播放…"
         : sc === "parte" ? "正在准备本大类播放…" : "准备中…";
       buildUnits(sc, function () { P.dirty = false; expand(); doStart(); });
     } else doStart();
@@ -760,6 +784,16 @@
     } else if (scope === "parte") {
       loadParte(curParte().gid, function (d) {
         cb(d ? d.secs.map(function (s) { return { gid: curParte().gid, sec: s }; }) : []);
+      });
+    } else if (scope === "grupo") {
+      var pts = META.grupos[state.g].partes.slice();
+      loadPartes(pts, function () {
+        var list = [];
+        pts.forEach(function (pt) {
+          var d = DATA[pt.gid]; if (!d) return;
+          d.secs.forEach(function (s) { list.push({ gid: pt.gid, sec: s }); });
+        });
+        cb(list);
       });
     } else {
       loadAll(function () {
