@@ -171,6 +171,59 @@ def is_concatenated(tbl):
     return False
 
 
+# ---------- markdown 管道表格（| 中文 | 意大利语 | 音标 | 词性 |） ----------
+
+
+def _pipe_cells(s):
+    cells = [c.strip() for c in s.strip().strip("|").split("|")]
+    return [c for c in cells if c]
+
+
+def _is_sep_row(cells):
+    return bool(cells) and all(re.match(r"^[-:= ]+$", c) for c in cells)
+
+
+def _is_header_row(cells):
+    return bool(cells) and all(c in HEADER_TOKENS for c in cells)
+
+
+def parse_table_rows(tbl):
+    """markdown 表格行：| 中文 | 意/法语 | [音标] | 词性 |"""
+    out = []
+    for l in tbl:
+        s = l.strip()
+        if not s.startswith("|"):
+            continue
+        cells = _pipe_cells(s)
+        if _is_header_row(cells) or _is_sep_row(cells) or len(cells) < 2:
+            continue
+        zh, it = cells[0], cells[1]
+        if not CJK.search(zh) or not it:
+            continue
+        ipa, pos = "", ""
+        for c in cells[2:]:
+            m = re.search(r"\[([^\]]*)\]", c)
+            if m:
+                ipa = m.group(1).strip()
+                c = (c[:m.start()] + c[m.end():]).strip()
+            if c and is_pos(c):
+                pos = c
+        out.append([zh, it, norm_pos(pos), "", "", im.zh_py(zh), ipa])
+    return out
+
+
+def is_pipe_table(tbl):
+    for l in tbl:
+        s = l.strip()
+        if not s.startswith("|"):
+            continue
+        cells = _pipe_cells(s)
+        if not cells or _is_header_row(cells) or _is_sep_row(cells):
+            continue
+        return True
+    return False
+
+
 # ---------- 标准竖排（4 行一组） ----------
 
 def _make_entry(buf):
@@ -219,7 +272,12 @@ def parse_raw(path):
     def flush_tbl():
         nonlocal tbl
         if tbl and cur is not None:
-            rows = parse_concat_lines(tbl) if is_concatenated(tbl) else parse_vertical(tbl)
+            if is_pipe_table(tbl):
+                rows = parse_table_rows(tbl)
+            elif is_concatenated(tbl):
+                rows = parse_concat_lines(tbl)
+            else:
+                rows = parse_vertical(tbl)
             cur["w"].extend(rows)
         tbl = []
 
@@ -234,7 +292,7 @@ def parse_raw(path):
             secs.append(cur)
             mode = "table"
             continue
-        if re.match(r"^Parte\b", s):
+        if re.match(r"^[#\s]*Part(?:ie|e)\b", s):
             flush_tbl()
             mode = None
             continue
