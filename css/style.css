@@ -137,6 +137,9 @@ button{cursor:pointer;background:none;border:none}
 .row .es:hover{color:var(--red)}
 .row .pos{font-size:11px;color:var(--tx3);background:var(--bg);
   border:1px solid var(--line);border-radius:4px;padding:0 5px;flex:0 0 auto}
+/* 词性置于音标之后，单独成行 */
+.row .row-pos{margin-top:1px}
+.row .row-pos .pos{display:inline-block}
 /* 中文翻译对应的词性标签（意语词性共用 it[2]，红色调区分） */
 .row .zh .pos-zh{color:var(--gold);background:var(--gold-l);border-color:var(--gold);
   margin-left:4px;cursor:default}

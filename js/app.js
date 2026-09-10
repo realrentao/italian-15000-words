@@ -219,7 +219,9 @@
         + (it[7] ? '<span class="fem-pill" data-a="' + AUDIO + it[7] + '" title="阴性形态单独发音">♀ '
             + esc(it[8] || "") + '</span>' : '')
         + (it[6] ? '<span class="ipa pron" title="意语音标">/' + esc(it[6]) + '/</span>' : '')
-        + '<span class="pos">' + esc(it[2]) + '</span></div>'
+        + '</div>'
+        // 词性置于音标之后，单独成行，避免与单词粘连
+        + (it[2] ? '<div class="row-pos"><span class="pos">' + esc(it[2]) + '</span></div>' : '')
         + '<div class="zh" data-a="' + AUDIO + it[4] + '">' + esc(it[0])
         + (it[2] ? ' <span class="pos pos-zh">' + esc(posZh(it[2])) + '</span>' : '')
         + '</div>'
