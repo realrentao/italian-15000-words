@@ -1,0 +1,106 @@
+Chapitre 社会·生活热词（意大利语版）
+
+Partie 16 时尚热词
+
+本 Partie 来自原书「时尚热词」系列（页438–446），为汉法短语对照，按拼音字母段分 Section。原卡无音标、无例句、无拓展板块，故采用「汉法对照热词」简化表（列序：中文｜法语）。
+
+Section 1 A–B 段（页438）
+
+中文
+意大利语
+安慰奖
+premio di consolazione
+暗箱操作
+operazioni segrete
+八宝饭
+riso glutinoso con otto tesori
+八卦
+pettegolezzi
+扒窃
+borseggiare
+把关
+fare da filtro
+白手起家
+farsi da solo
+拜金主义
+culto del denaro
+拜年
+fare gli auguri di Capodanno
+班车
+navetta aziendale
+办公室恋情
+storia d'amore in ufficio
+半成品
+semilavorato
+包袱
+fardello
+包销协议
+accordo di garanzia di vendita
+报喜不报忧
+riferire solo le buone notizie e non i problemi
+爆料
+fare uno scoop
+背黑锅
+pagare per colpa altrui
+奔丧
+tornare di corsa a casa per il funerale dei genitori
+本命年
+l'anno del proprio segno zodiacale cinese
+博彩
+giochi e lotterie
+博士后
+post-dottorato
+博士生
+dottorando
+博士生导师
+relatore di tesi
+不正当竞争
+concorrenza sleale
+步行街
+via pedonale
+步行天桥
+passerella pedonale
+
+Section 2 C 段（页438–439）
+
+中文意大利语擦边球azione al limite della regola彩票biglietto della lotteria菜鸟novellino掺水文凭diploma taroccato长途电话telefonata interurbana长治久安lungo periodo di stabilità倡议书lettera di proposta唱高调usare parole altisonanti扯皮rimpallarsi la responsabilità承办单位ente organizzatore城市低保对象beneficiari del minimo vitale urbano吃老本riposare sugli allori吃闲饭mangiare senza lavorare吃香essere molto richiesto/a痴人说梦dire sciocchezze充电ricaricare le batterie充电电路circuito di carica充值卡carta ricaricabile冲动型消费acquisto d'impulso抽样调查controllo a campione出风头farsi notare处女vergine处女作opera prima穿小鞋rendere la vita difficile a qualcuno穿越viaggiare attraverso穿针引线fare da intermediario传销vendita piramidale创造性思维pensiero creativo
+
+Section 3 D 段（页439）
+
+中文意大利语淡妆浓抹trucco leggero e trucco pesante挡箭牌paravento倒计时conto alla rovescia地方保护主义protezionismo locale第一夫人first lady电灯泡terzo incomodo电话会议conferenza telefonica电脑迷appassionato di computer电视直播车furgone regia电影版权费diritti cinematografici电影预告片trailer电子宠物animale elettronico电子词典dizionario elettronico电子货币moneta elettronica电子银行home banking答谢宴会banchetto di ringraziamento代课老师supplente带薪休假ferie pagate待机时间autonomia in standby单眼皮palpebre senza piega垫付somma anticipata吊胃口far venire l'acquolina in bocca跌足battere i piedi per terra定心丸qualcosa che rassicura qualcuno东道主padrone di casa独家代理rappresentante esclusivo独生子女figlio unico独资经营gestione in proprio
+
+Section 4 E–F 段（页440）
+
+中文意大利语儿童心理学psicologia dell'infanzia二百五babbeo二手货articolo usato发案率tasso di criminalità翻老账regolare un vecchio conto翻两倍raddoppiare方便食品cibi pronti房地产proprietà immobiliari放行单lasciapassare非法收入reddito illecito非婚生子女figli nati fuori dal matrimonio分公司filiale扶贫aiutare i poveri扶贫办公室ufficio di lotta alla povertà服务器server附加税imposta aggiuntiva复合型人才talento polivalente
+
+Section 5 G 段（页440–441）
+
+中文意大利语赶时髦essere alla moda岗位津贴indennità di posizione岗位培训formazione professionale岗位责任制responsabilità personale港务局autorità portuale高材生i migliori studenti高发期periodo di alta incidenza高峰picco高峰时间ore di punta高手esperto高危人群gruppi ad alto rischio工薪阶层lavoratori dipendenti工作室studio公务车auto di servizio公务员funzionario公休ferie ufficiali公益大使ambasciatore di beneficenza公益活动attività di pubblica utilità功夫片film di arti marziali恭喜发财buona fortuna e prosperità狗腿子tirapiedi构想concepire购买力potere d'acquisto购物车carrello固定电话telefono fisso刮鼻子farsi sgridare刮痧trattamento per raschiamento挂靠公司società affiliata挂失denunciare lo smarrimento挂职essere distaccato挂职下放distacco in provincia关键词过滤filtraggio delle parole chiave关税壁垒barriere doganali关税配额contingente tariffario关系网rete di relazioni观潮派attendista观光农业agricoltura turistica观望态度atteggiamento di attesa官商作风stile burocratico管理条例regolamenti光缆cavo in fibra ottica广而告之rendere noto a tutti广告词slogan pubblicitario广告代理行agenzia pubblicitaria广域网rete geografica规避eludere滚雪球fare palla di neve国事访问visita di Stato国书lettere credenziali过度放牧sovrappascolo过度开垦disboscamento eccessivo过渡期periodo di transizione
+
+Section 6 H 段（页441–442）
+
+中文意大利语豪赌giocare grosso好马不吃回头草un buon cavallo non torna al prato好球un bel colpo和谈trattative di pace核心力量forza del nucleo黑帮banda黑车auto non registrata黑社会la malavita黑匣子scatola nera黑眼圈occhiaie红领巾fazzoletto rosso呼叫转移trasferimento di chiamata狐狸精donna seducente互惠贸易commercio reciproco户籍证明certificato di stato civile户口薄registri di stato civile户主capofamiglia还俗ritorno allo stato laico还愿mantenere una promessa fatta a una divinità环太平洋的circumpacifico缓刑libertà condizionale换岗cambio di posto换届rinnovo del mandato黄昏恋amore della terza età黄金市场mercato dell'oro黄金行情corso dell'oro黄土高原altopiano di loess会考esame generale婚前同居convivenza prima del matrimonio婚前协议contratto prematrimoniale活动板房casa modulare货到付款pagamento alla consegna
+
+Section 7 J 段（页442–443）
+
+中文意大利语饥寒交迫soffrire il freddo e la fame基本工资stipendio di base吉祥物mascotte极限运动sport estremi集思广益mettere a frutto la saggezza collettiva计划经济economia pianificata计时工资salario orario计时票制sistema di voto技术顾问consulente tecnico季节工lavoratore stagionale既成事实fatto compiuto继承顺序ordine di successione寄售vendita in conto deposito家庭暴力violenza domestica家政服务servizi domestici甲骨文iscrizioni su ossa e gusci假账falso in bilancio尖端工艺tecnologia d'avanguardia减肥茶tè dimagrante剪彩tagliare il nastro简政放权decentramento amministrativo建筑面积superficie coperta健康证certificato sanitario僵持stallo僵尸cadavere ambulante降雨量precipitazioni矫情darsi delle arie阶梯教室anfiteatro街心花园giardino urbano结党营私formare una cricca per interessi privati进修班corso di perfezionamento禁渔期periodo di divieto di pesca经济动荡turbolenza economica经济危机crisi economica经济头脑spirito d'iniziativa经济萧条stagnazione economica经济效益redditività economica经营费用spese di gestione精简会议ridurre le riunioni精简机构semplificare le strutture amministrative精品capolavoro精神食粮nutrimento spirituale警戒线soglia di allarme敬老院casa di riposo义务教育istruzione obbligatoria酒肉朋友amici di tavola救济金sussidio就业保证garanzia dell'occupazione聚赌scommettere in gruppo军备竞赛corsa agli armamenti
+
+Section 8 K 段（页443–444）
+
+中文意大利语开工令ordine di avvio开光consacrazione开门红buon inizio看跌者ribassista康复中心centro di convalescenza考核制度sistema di valutazione考勤controllo delle presenze考勤制度sistema di controllo delle presenze靠山appoggio科普divulgazione scientifica客串apparizione cameo孔雀石malachite恐怖分子terrorista口碑reputazione口头禅frase ricorrente哭穷piangere miseria苦果frutto amaro跨国公司impresa multinazionale快餐pasto rapido快递corriere espresso
+
+Section 9 M–N 段（页444）
+
+中文意大利语马大哈distratto马屁精leccapiedi马赛克mosaico漫游vagabondare美容院istituto di bellezza庙会fiera抹黑screditare南北对话dialogo Nord-Sud闹情绪essere imbronciato泥石流colata di fango年夜饭cenone di Capodanno娘娘腔effeminato农业税tassa agricola浓妆trucco pesante
+
+Section 10 P–Q 段（页444–445）
+
+中文意大利语拍板prendere una decisione拍马屁leccare i piedi a qualcuno攀亲cercare alleanza per matrimonio盘点inventariare炮灰carne da cannone跑车auto sportiva跑龙套recitare una piccola parte跑腿fare commissioni泡沫经济economia di bolla配额quota配件accessori棚户baraccopoli碰钉子incontrare un rifiuto露天舞台palcoscenico all'aperto片酬compenso偏方rimedio popolare偏科predilezione per una materia票房biglietteria票友dilettante di teatro贫富悬殊divari di ricchezza品头论足giudicare l'aspetto di qualcuno平局pareggio屏蔽bloccare期货merci a termine期货交易operazione a termine骑警gendarme a cavallo棋迷fanatico degli scacchi旗袍qipao起跑者partente汽车牌照targa枪手ghostwriter抢购acquisto di panico敲竹杠estorcere denaro侨胞compatriota d'oltremare翘尾巴gonfiarsi d'orgoglio切身利益interessi vitali亲子鉴定test di paternità禽流感influenza aviaria勤工俭学studiare lavorando倾国倾城di una bellezza mozzafiato倾销dumping清仓处理liquidazione情歌canzone d'amore情节trama全程票价tariffa intera全球变暖riscaldamento globale权宜之计misura temporanea缺斤少两truffare sul peso鹊桥会incontro della Festa degli innamorati
+
+Section 11 R–S 段（页445）
+
+中文意大利语绕圈子girare intorno al vaso热岛效应effetto isola di calore热线linea diretta人才外流fuga di cervelli人道主义umanitarismo人口密度densità di popolazione人口普查censimento人口学demografia人力资源risorse umane人身攻击attacco personale人事调动trasferimento del personale人寿保险assicurazione sulla vita人头税capitazione荣誉称号distinzione onorifica入场ingresso入股presa di partecipazione入乡随俗rispettare gli usi locali软盘dischetto傻帽imbecille山寨contraffazione试婚matrimonio di prova瘦肉carne magra
+
+Section 12 T–W–Y–Z 段（页446）
+
+中文意大利语抬杠discutere per il gusto di discutere体罚punizione corporale铁饭碗impiego a vita铁杆粉丝fan sfegatato土特产specialità locale脱手sbarazzarsi di脱销essere esaurito望子成龙sperare nel successo del proprio figlio挖墙脚minare le fondamenta外卖consegna a domicilio网虫cybernauta网络空间cyberspazio网络营销marketing su Internet网民internauta网上冲浪者surfista网友contatto online旺季alta stagione亚军secondo classificato压缩开支ridurre le spese压轴戏clou dello spettacolo严惩punire severamente艳史avventure galanti摇头丸ecstasy夜猫子uccello di notte越狱evasione杂费spese varie灾民sinistrato宰人truffare争夺生源concorrenza per gli studenti
