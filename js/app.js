@@ -617,6 +617,14 @@
   }
 
   /* ---------- 初始化 ---------- */
+  /* 实测播放条真实高度写入 --player-h，避免移动端固定播放条遮住侧栏目录底部 */
+  function fitPlayerH() {
+    var pl = el("player");
+    if (!pl) return;
+    var h = pl.getBoundingClientRect().height;
+    if (h > 0) document.documentElement.style.setProperty("--player-h", h + "px");
+  }
+
   function init() {
     buildFlat();
     loadLS();
@@ -752,6 +760,12 @@
 
     initStudy();
     render();
+
+    fitPlayerH();
+    if (window.ResizeObserver) { try { new ResizeObserver(fitPlayerH).observe(el("player")); } catch (e) { } }
+    window.addEventListener("resize", fitPlayerH);
+    window.addEventListener("orientationchange", fitPlayerH);
+    window.addEventListener("load", fitPlayerH);
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
