@@ -16,11 +16,12 @@ RATE = "-10%"
 CONCURRENCY = 24
 
 
-async def save_one(text, voice, fp):
+async def save_one(text, voice, fp, ssml=None):
     import edge_tts
     for attempt in range(3):
         try:
-            comm = edge_tts.Communicate(text, voice, rate=RATE)
+            # 若提供 SSML（用于强制连读等微调），直接以 SSML 作为合成输入
+            comm = edge_tts.Communicate(ssml, voice, rate=RATE) if ssml else edge_tts.Communicate(text, voice, rate=RATE)
             with open(fp, "wb") as f:
                 async for chunk in comm.stream():
                     if chunk["type"] == "audio":
@@ -55,7 +56,7 @@ async def main():
         os.makedirs(os.path.dirname(fp), exist_ok=True)
         voice = VOICES.get(r["lang"])
         async with sem:
-            ok = await save_one(r["text"], voice, fp)
+            ok = await save_one(r["text"], voice, fp, ssml=r.get("ssml"))
         done += 1
         if done % 50 == 0:
             print("... %d/%d" % (done, len(todo)), flush=True)
