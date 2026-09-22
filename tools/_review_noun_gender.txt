@@ -1,0 +1,237 @@
+0.js	due settimane	名	N	guess-maybe:it=due settimane
+0.js	un periodo di tempo	名	Nm	guess-hi
+0.js	tempo di sonno	名	Nm	guess-hi
+0.js	ventisei	名	N	guess-maybe:it=ventisei
+0.js	ventisette	名	N	guess-maybe:it=ventisette
+0.js	ventotto	名	Nm	guess-hi
+0.js	orologiaio	名	Nm	guess-hi
+1.js	poliestere-cotone	n.	N	guess-maybe:it=poliestere-cotone
+13.js	maggiorenne	n.	N	guess-maybe:it=maggiorenne
+14.js	[ˈmɔːbile]	名 手机	N	guess-maybe:it=[ˈmɔːbile]
+14.js	[teˈlɛːfono tʃelˈluːlare]	名 信号	N	guess-maybe:it=[teˈlɛːfono tʃelˈluːlare]
+14.js	[seˈɲɲaːle]	名 手机铃声	N	guess-maybe:it=[seˈɲɲaːle]
+14.js	[swoneˈriːa]	名 语音提示	Nf	guess-hi
+14.js	[mesˈsaddʒi voˈkaːli]	名 直板手机	N	guess-maybe:it=[mesˈsaddʒi voˈkaːli]
+14.js	[teˈlɛːfono a ˈbarra]	名 翻盖手机	Nf	guess-hi
+14.js	[teˈlɛːfono a koŋˈkiːʎʎa]	名 滑盖手机	Nf	guess-hi
+14.js	[teˈlɛːfono a tasˈtjɛːra skorˈrɛːvole]	名 按键	N	guess-maybe:it=[teˈlɛːfono a tasˈtjɛːra skorˈrɛːvole]
+14.js	[pulˈsante]	名 提示音	N	guess-maybe:it=[pulˈsante]
+14.js	[seˈɲɲaːle aˈkustiko]	名 充值卡	Nm	guess-hi
+14.js	[ˈkarta rikariˈkaːbile]	名 漫游	N	guess-maybe:it=[ˈkarta rikariˈkaːbile]
+14.js	[itineˈrantːsa]	名 关机	Nf	guess-hi
+21.js	avvocato	n.	Nm	guess-hi
+21.js	rimpatriato	n.	Nm	guess-hi
+21.js	partner	n.	N	guess-maybe:it=partner
+22.js	compagno	n.	Nm	guess-hi
+23.js	proprietario	n.	Nm	guess-hi
+23.js	proprietario	n.	Nm	guess-hi
+23.js	gioielliere	n.	N	guess-maybe:it=gioielliere
+26.js	da sinistra a destra	名	Nf	guess-hi
+3.js	passeggero	n.	Nm	guess-hi
+3.js	criminale	n.	N	guess-maybe:it=criminale
+34.js	mandato	s.	Nm	guess-hi
+34.js	primavera	s.	Nf	guess-hi
+34.js	filosofia	s.	Nf	guess-hi
+34.js	Confucio	s.	Nm	guess-hi
+34.js	stabilità	s.	Nf	guess-hi
+34.js	aspetto	s.	Nm	guess-hi
+34.js	idea	s.	Nf	guess-hi
+34.js	signore	s.	N	guess-maybe:it=signore
+34.js	castelli	s.	N	guess-maybe:it=castelli
+34.js	proletariato	s.	Nm	guess-hi
+34.js	scuola superiore	s.	N	guess-maybe:it=scuola superiore
+34.js	coesistenza	s.	Nf	guess-hi
+34.js	armonia	s.	Nf	guess-hi
+34.js	mascotte	s.	N	guess-maybe:it=mascotte
+34.js	restaurazione	s.	N	guess-maybe:it=restaurazione
+34.js	elettorato	s.	Nm	guess-hi
+34.js	candidato	s.	Nm	guess-hi
+34.js	comunicato	s.	Nm	guess-hi
+34.js	antidoto	s.	Nm	guess-hi
+34.js	vertigine	s.	N	guess-maybe:it=vertigine
+34.js	salvataggio	s.	Nm	guess-hi
+34.js	tuono	s.	Nm	guess-hi
+34.js	impegno	s.	Nm	guess-hi
+34.js	banchetto	s.	Nm	guess-hi
+34.js	ingerenza	s.	Nf	guess-hi
+34.js	successo	s.	Nm	guess-hi
+34.js	riscaldamento	s.	Nm	guess-hi
+34.js	ambiente	s.	N	guess-maybe:it=ambiente
+34.js	appagamento	s.	Nm	guess-hi
+34.js	trasparenza	s.	Nf	guess-hi
+34.js	dinamismo	s.	Nm	guess-hi
+34.js	fisico	s.	Nm	guess-hi
+35.js	ordine	s.	N	guess-maybe:it=ordine
+35.js	meccanizzazione	s.	N	guess-maybe:it=meccanizzazione
+35.js	investimento	s.	Nm	guess-hi
+35.js	investimento	s.	Nm	guess-hi
+35.js	infrastruttura	s.	Nf	guess-hi
+35.js	telecomunicazione	s.	N	guess-maybe:it=telecomunicazione
+35.js	vulcano	s.	Nm	guess-hi
+35.js	previsione	s.	N	guess-maybe:it=previsione
+35.js	trattenuta	s.	Nf	guess-hi
+35.js	deposito	s.	Nm	guess-hi
+35.js	dispositivo	s.	Nm	guess-hi
+35.js	Mediterraneo	s.	Nm	guess-hi
+35.js	fraternità	s.	Nf	guess-hi
+35.js	patrimonio	s.	Nm	guess-hi
+35.js	cybercriminalità	s.	Nf	guess-hi
+35.js	collettività	s.	Nf	guess-hi
+35.js	inconveniente	s.	N	guess-maybe:it=inconveniente
+35.js	Wall Street	s.	N	guess-maybe:it=Wall Street
+35.js	pilota	s.	Nf	guess-hi
+35.js	angoscia	s.	Nf	guess-hi
+35.js	integralità	s.	Nf	guess-hi
+36.js	denaro	s.	Nm	guess-hi
+36.js	economista	s.	Nf	guess-hi
+36.js	commissione	s.	N	guess-maybe:it=commissione
+36.js	lusso	s.	Nm	guess-hi
+36.js	aumento	s.	Nm	guess-hi
+36.js	amministrazione	s.	N	guess-maybe:it=amministrazione
+36.js	interesse	s.	N	guess-maybe:it=interesse
+36.js	accumulo	s.	Nm	guess-hi
+36.js	danno	s.	Nm	guess-hi
+36.js	iniziativa	s.	Nf	guess-hi
+36.js	popolazione	s.	N	guess-maybe:it=popolazione
+36.js	spesa	s.	Nf	guess-hi
+36.js	borsa	s.	Nf	guess-hi
+36.js	matrimonio	s.	Nm	guess-hi
+36.js	imputazione	s.	N	guess-maybe:it=imputazione
+36.js	aumento	s.	Nm	guess-hi
+36.js	moltiplicazione	s.	N	guess-maybe:it=moltiplicazione
+36.js	insicurezza	s.	Nf	guess-hi
+37.js	espressione	s.	N	guess-maybe:it=espressione
+37.js	equilibrio	s.	Nm	guess-hi
+37.js	sudore	s.	N	guess-maybe:it=sudore
+37.js	padrone	s.	N	guess-maybe:it=padrone
+38.js	giornalista	s.	Nf	guess-hi
+38.js	quantità	s.	Nf	guess-hi
+38.js	portavoce	s.	N	guess-maybe:it=portavoce
+38.js	giornalista	s.	Nf	guess-hi
+38.js	riconoscimento	s.	Nm	guess-hi
+38.js	formula	s.	Nf	guess-hi
+39.js	territorio	s.	Nm	guess-hi
+39.js	investitore	s.	N	guess-maybe:it=investitore
+39.js	criminale	s.	N	guess-maybe:it=criminale
+39.js	pratica	s.	Nf	guess-hi
+39.js	incendiario	s.	Nm	guess-hi
+39.js	dichiarazione	s.	N	guess-maybe:it=dichiarazione
+39.js	regno	s.	Nm	guess-hi
+39.js	liberazione	s.	N	guess-maybe:it=liberazione
+39.js	carceriere	s.	N	guess-maybe:it=carceriere
+39.js	prigioniero	s.	Nm	guess-hi
+39.js	indicazione	s.	N	guess-maybe:it=indicazione
+39.js	sonno	s.	Nm	guess-hi
+4.js	mal d'aria	n.	Nf	guess-hi
+4.js	novizio	n.	Nm	guess-hi
+4.js	contraente	n.	N	guess-maybe:it=contraente
+4.js	passante	n.	N	guess-maybe:it=passante
+4.js	mendicante	n.	N	guess-maybe:it=mendicante
+4.js	birbante	n.	N	guess-maybe:it=birbante
+4.js	passeggero	n.	Nm	guess-hi
+4.js	viaggiatore	n.	N	guess-maybe:it=viaggiatore
+4.js	barista	n.	Nf	guess-hi
+4.js	evaso	n.	Nm	guess-hi
+4.js	controllore	n.	N	guess-maybe:it=controllore
+4.js	uscita di sicurezza	n.	Nf	guess-hi
+4.js	bigliettaio	n.	Nm	guess-hi
+4.js	sala VIP	n.	N	guess-maybe:it=sala VIP
+4.js	controllore	n.	N	guess-maybe:it=controllore
+4.js	tasse portuali	n.	N	guess-maybe:it=tasse portuali
+4.js	semaforo	n.	Nm	guess-hi
+4.js	compatriota	n.	Nf	guess-hi
+4.js	formalità doganali	n.	N	guess-maybe:it=formalità doganali
+4.js	importatore	n.	N	guess-maybe:it=importatore
+4.js	proprietario	n.	Nm	guess-hi
+4.js	comandante	n.	N	guess-maybe:it=comandante
+4.js	stazione merci	n.	N	guess-maybe:it=stazione merci
+4.js	stazione di partenza	n.	Nf	guess-hi
+4.js	dipartimento	n.	Nm	guess-hi
+4.js	ciclista	n.	Nf	guess-hi
+40.js	giudice	s.	N	guess-maybe:it=giudice
+40.js	debitore	s.	N	guess-maybe:it=debitore
+40.js	contabilità	s.	Nf	guess-hi
+40.js	criminale recidivo	s.	Nm	guess-hi
+40.js	portafoglio	s.	Nm	guess-hi
+40.js	routine	s.	N	guess-maybe:it=routine
+40.js	tribunale	s.	N	guess-maybe:it=tribunale
+40.js	testimone	s.	N	guess-maybe:it=testimone
+40.js	omicidio	s.	Nm	guess-hi
+40.js	autorità	s.	Nf	guess-hi
+40.js	contrabbando	s.	Nm	guess-hi
+40.js	matrimonio	s.	Nm	guess-hi
+40.js	avvocato	s.	Nm	guess-hi
+41.js	ribelli	s.	N	guess-maybe:it=ribelli
+41.js	comandante	s.	N	guess-maybe:it=comandante
+41.js	depositario	s.	Nm	guess-hi
+41.js	cavalleria	s.	Nf	guess-hi
+41.js	tutti	s.	N	guess-maybe:it=tutti
+41.js	generale	s.	N	guess-maybe:it=generale
+41.js	tiratore scelto	s.	Nm	guess-hi
+41.js	affezione	s.	N	guess-maybe:it=affezione
+41.js	passeggiata	s.	Nf	guess-hi
+41.js	dittatore	s.	N	guess-maybe:it=dittatore
+41.js	bosco	s.	Nm	guess-hi
+41.js	giuria	s.	Nf	guess-hi
+42.js	Mercurio	s.	Nm	guess-hi
+42.js	originalità	s.	Nf	guess-hi
+42.js	fiamma	s.	Nm	guess-hi
+42.js	corporazione	s.	N	guess-maybe:it=corporazione
+42.js	operatore	s.	N	guess-maybe:it=operatore
+42.js	modulo	s.	Nm	guess-hi
+43.js	ingegnere	s.	N	guess-maybe:it=ingegnere
+43.js	trasmissione	s.	N	guess-maybe:it=trasmissione
+43.js	indipendenza	s.	Nf	guess-hi
+43.js	diligenza	s.	Nf	guess-hi
+44.js	degrado	s.	Nm	guess-hi
+44.js	suolo	s.	Nm	guess-hi
+44.js	estinzione	s.	N	guess-maybe:it=estinzione
+44.js	estensione	s.	N	guess-maybe:it=estensione
+44.js	malato	s.	Nm	guess-hi
+45.js	giapponese	s.	N	guess-maybe:it=giapponese
+45.js	sentiero	s.	Nm	guess-hi
+45.js	sozzura	s.	Nf	guess-hi
+45.js	luogo	s.	Nm	guess-hi
+45.js	città	s.	Nf	guess-hi
+45.js	materialismo	s.	Nm	guess-hi
+45.js	esploratore	s.	N	guess-maybe:it=esploratore
+45.js	venerdì	s.	N	guess-maybe:it=venerdì
+45.js	istituzione	s.	N	guess-maybe:it=istituzione
+45.js	danno	s.	Nm	guess-hi
+45.js	vegetazione	s.	N	guess-maybe:it=vegetazione
+45.js	comparsa	s.	Nf	guess-hi
+45.js	neve	s.	N	guess-maybe:it=neve
+46.js	compaesano	s.	Nm	guess-hi
+46.js	foratura	s.	Nf	guess-hi
+46.js	pneumatico	s.	Nm	guess-hi
+46.js	congestione	s.	N	guess-maybe:it=congestione
+46.js	maniera	s.	Nf	guess-hi
+46.js	castigo	s.	Nm	guess-hi
+46.js	prigioniero	s.	Nm	guess-hi
+46.js	segheria	s.	Nf	guess-hi
+46.js	ostaggio	s.	Nm	guess-hi
+46.js	ambasciata	s.	Nf	guess-hi
+46.js	gendarme	s.	N	guess-maybe:it=gendarme
+46.js	Pentagono	s.	Nm	guess-hi
+46.js	portare a	s.	Nf	guess-hi
+46.js	durante la guerra	s.	Nf	guess-hi
+46.js	fare la guerra	s.	Nf	guess-hi
+46.js	inquietudine	s.	N	guess-maybe:it=inquietudine
+46.js	scontro	s.	Nm	guess-hi
+47.js	disco	s.	Nm	guess-hi
+47.js	adolescente	s.	N	guess-maybe:it=adolescente
+47.js	attività	s.	Nf	guess-hi
+47.js	incandescenza	s.	Nf	guess-hi
+47.js	pietra	s.	Nf	guess-hi
+47.js	cemento	s.	Nm	guess-hi
+47.js	straccio	s.	Nm	guess-hi
+47.js	pezzo	s.	Nm	guess-hi
+48.js	ripartizione	s.	N	guess-maybe:it=ripartizione
+48.js	accesso	s.	Nm	guess-hi
+48.js	concorrenza	s.	Nf	guess-hi
+5.js	adolescente	n.	N	guess-maybe:it=adolescente
+5.js	martire	n.	N	guess-maybe:it=martire
+5.js	miope	n.	N	guess-maybe:it=miope
+5.js	ambliope	n.	N	guess-maybe:it=ambliope
+5.js	anestesista	n.	Nf	guess-hi
+7.js	depositante	n.	N	guess-maybe:it=depositante

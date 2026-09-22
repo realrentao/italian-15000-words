@@ -1,0 +1,52 @@
+17.js	artista	s.m./s.f.	Nm/Nf
+17.js	studente	s.m./s.f.	Nm/Nf
+17.js	compagno, a	s.m./s.f.	Nm/Nf
+17.js	condiscepolo, a	s.m./s.f.	Nm/Nf
+17.js	scolaro, a	s.m./s.f.	Nm/Nf
+17.js	assistente	s.m./s.f.	Nm/Nf
+17.js	direttore, trice	s.m./s.f.	Nm/Nf
+17.js	presidente	s.m./s.f.	Nm/Nf
+17.js	decano, a	s.m./s.f.	Nm/Nf
+17.js	educatore, trice	s.m./s.f.	Nm/Nf
+18.js	assente	s.m./f.	Nm/Nf
+18.js	organizzatore, trice	s.m./f.	Nm/Nf
+18.js	laureato, a	s.m./f.	Nm/Nf
+18.js	relatore, trice	s.m./f.	Nm/Nf
+18.js	sognatore, trice	s.m./f.	Nm/Nf
+20.js	elettricista	s.m./s.f.	Nm/Nf
+20.js	elettrofilo, a	s.m./s.f.	Nm/Nf
+26.js	ciclista	s.m./s.f.	Nm/Nf
+26.js	ballerino / ballerina	名 m./f.	Nm/Nf
+27.js	giardiniere, giardiniera	名 m./f.	Nm/Nf
+27.js	contadino, contadina	s.m./s.f.	Nm/Nf
+27.js	chitarrista	名 m./f.	Nm/Nf
+27.js	pianista	名 m./f.	Nm/Nf
+27.js	dilettante	s.m./s.f.	Nm/Nf
+27.js	francofono	s.m./s.f.	Nm/Nf
+27.js	specialista	名 m./f.	Nm/Nf
+27.js	capace di identificare	名 m./f.	Nm/Nf
+27.js	commerciante	名 m./f.	Nm/Nf
+30.js	correttore, trice	名 m./f.	Nm/Nf
+30.js	giornalista	名 m./f.	Nm/Nf
+30.js	corrispondente	名 m./f.	Nm/Nf
+30.js	commentatore, trice	名 m./f.	Nm/Nf
+30.js	corrispondente permanente	名 m./f.	Nm/Nf
+31.js	giocatore, trice	名 m./f.	Nm/Nf
+31.js	ciclista	s.m./f.	Nm/Nf
+31.js	vincitore, trice	名 m./f.	Nm/Nf
+32.js	giocatore, trice	s.m./s.f.	Nm/Nf
+32.js	spettatore, trice	名 m./f.	Nm/Nf
+32.js	atleta	名 m./f.	Nm/Nf
+32.js	sostituto, a	名 m./f.	Nm/Nf
+32.js	calciatore, calciatrice	名 m. / f.	Nm/Nf
+32.js	centrocampista	名 m. / f.	Nm/Nf
+32.js	portiere	名 m. / f.	Nm/Nf
+32.js	spettatore, spettatrice	s.m. / s.f.	Nm/Nf
+32.js	vincitore	名 m. / f.	Nm/Nf
+32.js	segnapunti	名 m. / f.	Nm/Nf
+32.js	velocista	名 m. / f.	Nm/Nf
+32.js	ostacolista	名 m. / f.	Nm/Nf
+33.js	lunato	名 m./f.	Nm/Nf
+33.js	turista	名 m./f.	Nm/Nf
+34.js	elettore, elettrice	s. m./f.	Nm/Nf
+34.js	candidato, candidata	s. m./f.	Nm/Nf

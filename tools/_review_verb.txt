@@ -1,0 +1,1294 @@
+svenire	v.i.	Va	def-a
+rendere	v.t.	Va	def-a
+coricare	v.	Va	def-a
+perdere	v.t.	Va	def-a
+arrivare	v.i.	Ve	
+legare	v.t.	Va	def-a
+ripetere	v.t.	Va	def-a
+partire	v.i.	Ve	
+svitare	v.t.	Va	def-a
+lanciare	v.t.	Va	def-a
+incollare	v.t.	Va	def-a
+indovinare	v.t.	Va	def-a
+assistere	v.i.	Va	def-a
+esistere	v.i.	Va	def-a
+benedire	v.t.	Va	def-a
+felicitare	v.t.	Va	def-a
+ingannare	v.t.	Va	def-a
+imbrogliare	v.t.	Va	def-a
+sembra	v.i.	Va	def-a
+dovere	v.t.	Va	def-a
+soffiare	v.t.	Va	def-a
+nascere	i.	Ve	
+condividere	v.t.	Va	def-a
+sbalordire	v.t.	Va	def-a
+augurare	v.t.	Va	def-a
+invitare	v.t.	Va	def-a
+accettare	v.t.	Va	def-a
+rifiutare	v.t.	Va	def-a
+cadere	v.i.	Ve	
+vestirsi	v.pr	Ve	
+preferire	v.t.	Va	def-a
+contenere	v.t.	Va	def-a
+abbinare	v.t.	Va	def-a
+umiliare	v.t.	Va	def-a
+tagliare	v.t.	Va	def-a
+mancare	v.t.	Va	def-a
+portare	v.t.	Va	def-a
+convenire	v.i.	Va	def-a
+provare	v.t.	Va	def-a
+contribuire	v.t.	Va	def-a
+chiudere con cerniera	v.t.	Va	def-a
+rilassare	v.t.	Va	def-a
+pendere	v.i.	Va	def-a
+spedire	v.t.	Va	def-a
+distendere	v.t.	Va	def-a
+sospettare	v.t.	Va	def-a
+allacciare	v.t.	Va	def-a
+trasformare	v.t.	Va	def-a
+mettere	v.t.	Va	def-a
+mandare	v.t.	Va	def-a
+contagiare	v.t.	Va	def-a
+ornare	v.t.	Va	def-a
+placcare	v.t.	Va	def-a
+corrispondere	v.t.	Va	def-a
+fare un desiderio	v.	Va	def-a
+spendere	v.tr.	Va	def-a
+insultare	v.tr.	Va	def-a
+cercare	v.tr.	Va	def-a
+attivare	v.tr.	Va	def-a
+abbandonare	v.tr.	Va	def-a
+permettere	v.tr.	Va	def-a
+coltivare	v.tr.	Va	def-a
+nutrire	v.tr.	Va	def-a
+orinare	v.intr.	Va	def-a
+defecare	v.intr.	Va	def-a
+liberare	v.tr.	Va	def-a
+svuotare i rifiuti	v.	Va	def-a
+ammucchiare	v.tr.	Va	def-a
+purificare	v.tr.	Va	def-a
+sistemare	v.tr.	Va	def-a
+spazzare	v.tr.	Va	def-a
+separare	v.tr.	Va	def-a
+liberare	v.tr.	Va	def-a
+guardare di traverso	v.	Va	def-a
+avere i lineamenti fini	v.	Va	def-a
+attirare	v.tr.	Va	def-a
+distendere	v.	Va	def-a
+sorridere con le labbra	v.	Va	def-a
+ridere con gioia	v.	Va	def-a
+sorridere	v.	Va	def-a
+canzonare	v.	Va	def-a
+ridere a crepapelle	v.	Va	def-a
+impegnare	v.tr.	Va	def-a
+dirigere	v.	Va	def-a
+essere oscuro	v.	Ve	
+permettere	v.tr.	Va	def-a
+addomesticare	v.tr.	Va	def-a
+ridurre	v.tr.	Va	def-a
+testimoniare	v.tr.	Va	def-a
+lavorare	v.	Va	def-a
+decollare	v.intr.	Va	def-a
+parlare	v.	Va	def-a
+dire	v.	Va	def-a
+prendere la parola	v.	Va	def-a
+gridare	v.	Va	def-a
+proclamare	v.	Va	def-a
+parlare a bassa voce	v.	Va	def-a
+esortare	v.	Va	def-a
+spiegare	v.	Va	def-a
+biasimare	v.	Va	def-a
+criticare	v.	Va	def-a
+ripetere	v.	Va	def-a
+guidare	v.	Va	def-a
+introdurre	v.	Va	def-a
+esaltare	v.	Va	def-a
+mentire	v.	Va	def-a
+raccomandare	v.	Va	def-a
+risparmiare	v.tr.	Va	def-a
+ispirare	v.tr.	Va	def-a
+scuotere	v.	Va	def-a
+inchinarsi	v.	Ve	
+essere d'accordo	v.	Ve	
+non essere d'accordo	v.	Va	def-a
+applaudire	v.	Va	def-a
+acclamare	v.	Va	def-a
+fare	v.	Va	def-a
+rappresentare	v.	Va	def-a
+praticare	v.	Va	def-a
+presentare una richiesta	v.	Va	def-a
+trasmettere via radio	v.	Va	def-a
+litigare	v.	Va	def-a
+chiedere	v.	Va	def-a
+contestare	v.	Va	def-a
+salutare	v.	Va	def-a
+ringraziare	v.	Va	def-a
+curvarsi	v.	Ve	
+barcollare	v.	Va	def-a
+trascinare la gamba	v.	Ve	
+sospendere	v.	Va	def-a
+zoppicare	v.	Ve	
+passeggiare	v.	Va	def-a
+accovacciarsi	v.	Ve	
+approvare	v.	Va	def-a
+assentire	v.	Va	def-a
+preferire	v.	Va	def-a
+prendere le parti di qn	v.	Va	def-a
+contrariare	v.	Va	def-a
+disprezzare	v.	Va	def-a
+interrompere	v.tr.	Va	def-a
+invadere	v.tr.	Va	def-a
+navigare	v.	Va	def-a
+annullare	v.	Va	def-a
+aggiornare	v.	Va	def-a
+connettere	v.	Va	def-a
+consultare	v.tr.	Va	def-a
+diluire	v.tr.	Va	def-a
+abbonare	v.	Va	def-a
+nascondere	v.	Va	def-a
+commentare	v.	Va	def-a
+rispondere	v.	Va	def-a
+uscire	v.	Ve	
+registrarsi	v.	Ve	
+eliminare	v.	Va	def-a
+inviare	v.	Va	def-a
+annullare	v.	Va	def-a
+praticare	v.tr.	Va	def-a
+tollerare	v.tr.	Va	def-a
+incoraggiare	v.	Va	def-a
+dirsi addio	v.	Ve	
+chiedere la mano	v.	Va	def-a
+accompagnare	v.	Va	def-a
+simboleggiare	v.tr.	Va	def-a
+azzuffarsi	v.	Ve	
+apprezzare molto	v.	Va	def-a
+scambiare	v.	Va	def-a
+argomentare	v.	Va	def-a
+litigare	v.	Va	def-a
+odiare	v.tr.	Va	def-a
+sposarsi	v.	Ve	
+celebrare	v.	Va	def-a
+prestare	v.tr.	Va	def-a
+essere sospeso dalla scuola	v.	Ve	
+prolungare	v.	Va	def-a
+ripassare	v.	Va	def-a
+copiare	v.	Va	def-a
+partecipare all'esame	v.	Va	def-a
+fallire un esame	v.	Va	def-a
+ripetere un esame	v.	Va	def-a
+iscriversi	v.pr.	Ve	
+correre	v.i.	Va	def-a
+saltare la corda	v.tr.	Va	def-a
+sforzarsi	v.pr.	Ve	
+areare	v.tr.	Va	def-a
+diffondere	v.tr.	Va	def-a
+disegnare	v.tr.	Va	def-a
+dipingere	v.tr.	Va	def-a
+fare pittura	v.tr.	Va	def-a
+coltivare	v.tr.	Va	def-a
+mescolare	v.tr.	Va	def-a
+collezionare	v.tr.	Va	def-a
+studiare	v.tr.	Va	def-a
+diluire	v.tr.	Va	def-a
+insegnare	v.tr.	Va	def-a
+prendere in prestito	v.tr.	Va	def-a
+prestare	v.tr.	Va	def-a
+cercare	v.tr.	Va	def-a
+prenotare	v.tr.	Va	def-a
+classificare	v.tr.	Va	def-a
+assistere	v.i.	Va	def-a
+concentrare la propria attenzione	v.t.	Va	def-a
+concentrarsi	v.rifl.	Ve	
+marinare le lezioni	v.t.	Va	def-a
+fare l'appello	v.t.	Va	def-a
+disporre	v.t.	Va	def-a
+punire	v.t.	Va	def-a
+penalizzare	v.t.	Va	def-a
+interrogare	v.t.	Va	def-a
+presentare	v.t.	Va	def-a
+incoraggiare	v.t.	Va	def-a
+ispirare	v.t.	Va	def-a
+comunicare	v.t.	Va	def-a
+ottenere	v.t.	Va	def-a
+approvare	v.t.	Va	def-a
+beneficiare	v.i.	Va	def-a
+sistemare	v.t.	Va	def-a
+sostenere	v.t.	Va	def-a
+finanziare	v.t.	Va	def-a
+richiedere	v.t.	Va	def-a
+aggiungere	v.t.	Va	def-a
+annoiare	v.t.	Va	def-a
+ottenere	v.t.	Va	def-a
+attraversare	v.t.	Va	def-a
+ripetere l'anno	v.t.	Va	def-a
+differenziare	v.t.	Va	def-a
+terminare i propri studi	v.t.	Va	def-a
+rinviare	v.t.	Va	def-a
+citare	v.t.	Va	def-a
+studiare all'estero	v.i.	Va	def-a
+presentare una domanda	v.t.	Va	def-a
+ammettere	v.t.	Va	def-a
+incantare	v.t.	Va	def-a
+possedere	v.t.	Va	def-a
+menzionare	v.t.	Va	def-a
+copiare	v.t.	Va	def-a
+annotare	v.t.	Va	def-a
+consigliare	v.t.	Va	def-a
+perseguire	v.t.	Va	def-a
+abbandonare	v.t.	Va	def-a
+realizzare	v.t.	Va	def-a
+combattere	v.t.	Va	def-a
+tradurre	v.t.	Va	def-a
+promuovere	v.t.	Va	def-a
+sfogliare	v.t.	Va	def-a
+riflettere	v.t.	Va	def-a
+studiare	v.t.	Va	def-a
+associare	v.t.	Va	def-a
+saltare	v.t.	Va	def-a
+simboleggiare	v.t.	Va	def-a
+scavare	v.t.	Va	def-a
+dissotterrare	v.t.	Va	def-a
+indurre	v.t.	Va	def-a
+contemplare	v.t.	Va	def-a
+azzardare	v.t.	Va	def-a
+mescolare	v.t.	Va	def-a
+metamorfosare	v.t.	Va	def-a
+riassumere	v.t.	Va	def-a
+azzardare	v.t.	Va	def-a
+mescolare	v.t.	Va	def-a
+incuriosire	v.t.	Va	def-a
+venire	v.i.	Ve	
+maledire	v.t.	Va	def-a
+esistere	v.i.	Va	def-a
+stampare	v.t.	Va	def-a
+descrivere	v.t.	Va	def-a
+rilegare	v.t.	Va	def-a
+inghiottire	v.	Va	def-a
+vomitare	v.	Va	def-a
+mangiare	v.	Va	def-a
+bere	v.	Va	def-a
+masticare	v.	Va	def-a
+digerire	v.	Va	def-a
+leccare	v.	Va	def-a
+assaggiare	v.	Va	def-a
+prendere	v.	Va	def-a
+disturbare	v.t.	Va	def-a
+distruggere	v.t.	Va	def-a
+influenzare	v.t.	Va	def-a
+temere	v.t.	Va	def-a
+arrostire	v.t.	Va	def-a
+tentare	v.t.	Va	def-a
+toccare	v.i.	Va	def-a
+condividere	v.	Va	def-a
+sbavare	v.	Va	def-a
+traboccare	v.	Va	def-a
+mangiare a crepapelle	v.	Va	def-a
+saziare	v.	Va	def-a
+assumere	v.t.	Va	def-a
+realizzare	v.t.	Va	def-a
+progredire	v.i.	Va	def-a
+impastare	t.	Va	def-a
+stendere la pasta	v.	Va	def-a
+misurare	v.t.	Va	def-a
+spargere	t.	Va	def-a
+agitare	vt	Va	def-a
+spalmare	t.	Va	def-a
+spingere	t.	Va	def-a
+nascondere	v.t.	Va	def-a
+soffriggere	v.	Va	def-a
+friggere	v.	Va	def-a
+cuocere	v.	Va	def-a
+arrostire	v.	Va	def-a
+grigliare	v.	Va	def-a
+arrostire alla brace	v.	Va	def-a
+stufare	v.	Va	def-a
+salare	v.	Va	def-a
+tagliare	v.	Va	def-a
+tritare	vt	Va	def-a
+mescolare	v.	Va	def-a
+sbucciare	v.	Va	def-a
+cuocere in cartoccio	v.	Va	def-a
+raffinare	v.t.	Va	def-a
+trasformare	v.t.	Va	def-a
+addensare	v.t.	Va	def-a
+circondare	v.t.	Va	def-a
+ubriacare	v.	Va	def-a
+mandare	v.t.	Va	def-a
+degustare	v.t.	Va	def-a
+rinfrescare	i.	Va	def-a
+ingrassare	v.i.	Va	def-a
+organizzare	v.t.	Va	def-a
+fermentare	i.	Va	def-a
+condensare	t.	Va	def-a
+sentire	v.t.	Va	def-a
+inspirare	v.t.	Va	def-a
+espirare	v.t.	Va	def-a
+macinare	t.	Va	def-a
+importare	t.	Va	def-a
+diffondere	t.	Va	def-a
+legare	v.t.	Va	def-a
+rappresentare	v.t.	Va	def-a
+inforcare	t.	Va	def-a
+attingere	t.	Va	def-a
+pinzare	t.	Va	def-a
+chiedere	v.t.	Va	def-a
+tagliare	v.t.	Va	def-a
+mettere	t.	Va	def-a
+sporcare	t.	Va	def-a
+divorare	t.	Va	def-a
+stracciare	t.	Va	def-a
+scambiare	t.	Va	def-a
+sorseggiare	t.	Va	def-a
+strofinare	t.	Va	def-a
+leccare	t.	Va	def-a
+ripensare	v.t.	Va	def-a
+sopportare	v.t.	Va	def-a
+dimenticare	v.t.	Va	def-a
+sterilizzare	t.	Va	def-a
+seccare	t.	Va	def-a
+immagazzinare	t.	Va	def-a
+affumicare	t.	Va	def-a
+praticare	v.t.	Va	def-a
+gonfiare	v.t.	Va	def-a
+moltiplicare	v.t.	Va	def-a
+dividere	v.t.	Va	def-a
+dimenticare	v.t.	Va	def-a
+dare	v.t.	Va	def-a
+cercare	t.	Va	def-a
+impiegare	t.	Va	def-a
+assumere	t.	Va	def-a
+ingaggiare	t.	Va	def-a
+richiedere	t.	Va	def-a
+cercare	v.t.	Va	def-a
+scrivere	v.t.	Va	def-a
+ambire	t.	Va	def-a
+consacrare	t.	Va	def-a
+mantenere	v.t.	Va	def-a
+sentire	v.t.	Va	def-a
+compiere	t.	Va	def-a
+analizzare	t.	Va	def-a
+nominare	t.	Va	def-a
+aiutare	t.	Va	def-a
+sfondare	t.	Va	def-a
+guidare	t.	Va	def-a
+controllare	t.	Va	def-a
+sviluppare	t.	Va	def-a
+avere l'idea di	t.	Va	def-a
+dovere	t.	Va	def-a
+ottenere	t.	Va	def-a
+sembrare	v.i.	Ve	
+provare	v.t.	Va	def-a
+introdurre	t.	Va	def-a
+risolvere	t.	Va	def-a
+raccomandare	t.	Va	def-a
+chiedere	t.	Va	def-a
+preparare	t.	Va	def-a
+cedere	v.t.	Va	def-a
+aumentare	t.	Va/Ve	
+valutare	t.	Va	def-a
+apprezzare	t.	Va	def-a
+trattenere	t.	Va	def-a
+dedurre	t.	Va	def-a
+identificare	v.t.	Va	def-a
+assorbire nuovi membri	t.	Va	def-a
+familiarizzare	t.	Va	def-a
+guidare	t.	Va	def-a
+cooperare	t.	Va	def-a
+presiedere	t.	Va	def-a
+essere responsabile di	t.	Ve	
+consigliare	t.	Va	def-a
+gestire	t.	Va	def-a
+finanziare	v.t.	Va	def-a
+sfogliare	v.t.	Va	def-a
+sforzarsi	v.pr.	Ve	
+conciliare	v.t.	Va	def-a
+affilare	t.	Va	def-a
+presentare	t.	Va	def-a
+assistere a	t.	Va	def-a
+partecipare	t.	Va	def-a
+prendere parte a	t.	Va	def-a
+compiere	t.	Va	def-a
+finire	t.	Va	def-a
+cancellare	t.	Va	def-a
+incollare	t.	Va	def-a
+copiare	t.	Va	def-a
+tagliare	t.	Va	def-a
+cliccare	t.	Va	def-a
+doppio clic	t.	Va	def-a
+invio	i.	Va	def-a
+collegare	t.	Va	def-a
+scaricare	t.	Va	def-a
+eliminare	t.	Va	def-a
+bloccare	t.	Va	def-a
+manifestare	v.t.	Va	def-a
+offuscare	t.	Va	def-a
+installare	t.	Va	def-a
+fare straordinari	t.	Va	def-a
+riposarsi	t.	Ve	
+promuovere	t.	Va	def-a
+far carriera	t.	Va	def-a
+chiedere	t.	Va	def-a
+mantenere	t.	Va	def-a
+fare sforzi	t.	Va	def-a
+provare	t.	Va	def-a
+progredire	i.	Va	def-a
+avanzare	t.	Va	def-a
+collaborare	v.	Va	def-a
+armonizzare	v.	Va	def-a
+cooperare	v.	Va	def-a
+influenzare	v.	Va	def-a
+aiutare	v.	Va	def-a
+rendere un servizio	v.	Va	def-a
+favorire	v.	Va	def-a
+contare su	v.	Va	def-a
+dipendere	v.	Va	def-a
+avere fiducia in	v.	Va	def-a
+coordinare	v.t.	Va	def-a
+supplicare	v.t.	Va	def-a
+perdonare	v.t.	Va	def-a
+lamentarsi	v.	Ve	
+avercela con	v.	Va	def-a
+soddisfare	v.	Va	def-a
+diminuire	v.	Va/Ve	
+aumentare	v.	Va/Ve	
+ridurre	v.	Va	def-a
+costringere a fare	t.	Va	def-a
+forzarsi a	t.	Ve	
+temere	t.	Va	def-a
+criticare	t.	Va	def-a
+esaltare	t.	Va	def-a
+celebrare	t.	Va	def-a
+dissimulare	v.t.	Va	def-a
+scambiare	v.	Va	def-a
+consultare	v.	Va	def-a
+discutere	v.	Va	def-a
+argomentare	v.	Va	def-a
+proporre	v.	Va	def-a
+raccomandare	v.	Va	def-a
+riflettere	v.	Va	def-a
+supporre	v.	Va	def-a
+riconciliare	v.	Va	def-a
+partire in missione	t.	Ve	
+richiedere un rimborso	t.	Va	def-a
+decidere	t.	Va	def-a
+riferire	t.	Va	def-a
+navigare	v.i.	Va	def-a
+dimettersi	i.	Ve	
+rassegnare le dimissioni	i.	Va	def-a
+cambiare lavoro	t.	Va	def-a
+licenziare	t.	Va	def-a
+congedare	t.	Va	def-a
+rinviare	t.	Va	def-a
+distribuire	t.	Va	def-a
+ondulare	i.	Va	def-a
+lavorare	i.	Va	def-a
+superare	t.	Va	def-a
+avere un impatto significativo	r.	Va	def-a
+esibire	t.	Va	def-a
+esporre	t.	Va	def-a
+toccare	t.	Va	def-a
+anticipare	t.	Va	def-a
+sostenere	t.	Va	def-a
+negoziare	i.	Va	def-a
+continuare	i.	Va	def-a
+risolvere	i.	Va	def-a
+discutere	i.	Va	def-a
+con sentimenti forti	i.	Va	def-a
+riposare	i.	Va	def-a
+fallire	i.	Va	def-a
+consultare	i.	Va	def-a
+contrariare	i.	Va	def-a
+dissentire	i.	Va	def-a
+quotare	t.	Va	def-a
+fare un'offerta	i.	Va	def-a
+accettare	t.	Va	def-a
+prolungare	t.	Va	def-a
+rinnovare	t.	Va	def-a
+revocare	t.	Va	def-a
+acquistare	t.	Va	def-a
+staccare	t.	Va	def-a
+chinarsi	i.	Ve	
+ventilare	t.	Va	def-a
+spostare	t.	Va	def-a
+trasporre	t.	Va	def-a
+fare delle riserve	t.	Va	def-a
+predominare	t.	Va	def-a
+ripetere	t.	Va	def-a
+riconoscere	t.	Va	def-a
+confermare	t.	Va	def-a
+risolvere	t.	Va	def-a
+risarcire	t.	Va	def-a
+arbitrare	t.	Va	def-a
+consegnare	t.	Va	def-a
+violare	t.	Va	def-a
+stipulare	t.	Va	def-a
+subire	t.	Va	def-a
+riprodurre	t.	Va	def-a
+assicurare	t.	Va	def-a
+risarcire	t.	Va	def-a
+indennizzare	t.	Va	def-a
+vendere	t.	Va	def-a
+indagare	i.	Va	def-a
+cambiare	t.	Va	def-a
+fare la spesa	动	Va	def-a
+vendere al dettaglio	动	Va	def-a
+digerire	v.tr.	Va	def-a
+stringere	动	Va	def-a
+schizzare	动	Va	def-a
+togliere	动	Va	def-a
+lavare	动	Va	def-a
+osservare	v.tr.	Va	def-a
+macinare	动	Va	def-a
+convincere	v.tr.	Va	def-a
+sprigionare	v.tr.	Va	def-a
+affumicare	动	Va	def-a
+arrivare	v.intr.	Ve	
+mescolare	v.tr.	Va	def-a
+truccare	v.tr.	Va	def-a
+degustare	v.tr.	Va	def-a
+raccomandare	v.tr.	Va	def-a
+salare	动 v.tr.	Va	def-a
+accarezzare	动 v.tr.	Va	def-a
+graffiare	动 v.tr.	Va	def-a
+scivolare	动 v.intr.	Va	def-a
+costruire	v.tr.	Va	def-a
+contabilizzare	动 v.tr.	Va	def-a
+svendere	动 v.tr.	Va	def-a
+saldare un conto	动 v.tr.	Va	def-a
+allenare	动 v.tr.	Va	def-a
+stirare	动 v.tr.	Va	def-a
+allontanare	v.tr.	Va	def-a
+ballare	动 v.intr.	Va	def-a
+provenire	动 v.intr.	Va	def-a
+sfidare	动 v.tr.	Va	def-a
+respirare	动 v.intr.	Va	def-a
+aspirare	动 v.tr.	Va	def-a
+rilassare	动 v.tr.	Va	def-a
+ripetere	动 v.tr.	Va	def-a
+circolare	动 v.intr.	Va	def-a
+sollevare	动 v.tr.	Va	def-a
+sdraiarsi	动 v.intr.	Ve	
+lanciare	动 v.tr.	Va	def-a
+deviare	动 v.intr.	Va	def-a
+battere	动 v.tr.	Va	def-a
+battere	动 v.tr.	Va	def-a
+pattinare	动 —	Va	def-a
+scivolare	动 —	Va	def-a
+balzare	动 —	Va	def-a
+turbinare	动 —	Va	def-a
+passeggiare	v.intr.	Va	def-a
+puntare	动 —	Va	def-a
+agitare	动 —	Va	def-a
+mancare	动 —	Va	def-a
+localizzare	v.tr.	Va	def-a
+nuotare	动 —	Va	def-a
+prestare	v.tr.	Va	def-a
+potare	动 —	Va	def-a
+tagliare	动 —	Va	def-a
+assimilare	动 —	Va	def-a
+germogliare	动 —	Va	def-a
+ancorare	v.tr.	Va	def-a
+perturbare	v.tr.	Va	def-a
+sentire	v.tr.	Va	def-a
+comporre	动 —	Va	def-a
+premere	动 —	Va	def-a
+passeggiare	v.intr.	Va	def-a
+rappresentare	动 —	Va	def-a
+esporre	动 —	Va	def-a
+collezionare	动 —	Va	def-a
+distinguere	动 —	Va	def-a
+riprodurre	动 —	Va	def-a
+conservare	动 —	Va	def-a
+circolare	动 —	Va	def-a
+ricostruire	v.tr.	Va	def-a
+noce	动 f.	Va	def-a
+volteggiare	v.intr.	Va	def-a
+cantare	动 v.tr.	Va	def-a
+tentare	v.tr.	Va	def-a
+fornire	动 v.tr.	Va	def-a
+grigliare	动 v.tr.	Va	def-a
+rinunciare	v.tr.	Va	def-a
+guardare	动 v.tr.	Va	def-a
+vedere	动 v.tr.	Va	def-a
+distribuire	动 v.tr.	Va	def-a
+pianificare	动 v.tr.	Va	def-a
+realizzare	动 v.tr.	Va	def-a
+ascoltare	动 v.tr.	Va	def-a
+dirigere	动 v.tr.	Va	def-a
+registrare	v.tr.	Va	def-a
+creare	v.	Va	def-a
+sembrare	v.i.	Ve	
+invitare	v.t.	Va	def-a
+guastarsi	v.	Ve	
+riparare	v.	Va	def-a
+intralciare	v.	Va	def-a
+cadere	v.	Ve	
+significare	v.t.	Va	def-a
+funzionare	v.i.	Va	def-a
+trasformare	v.	Va	def-a
+uscire	v.	Ve	
+tirare	v.	Va	def-a
+chiudere	v.	Va	def-a
+spingere	v.	Va	def-a
+bussare	v.	Va	def-a
+varcare	v.t.	Va	def-a
+calpestare	v.t.	Va	def-a
+aprire	v.	Va	def-a
+chiudere	v.	Va	def-a
+scuotere	v.	Va	def-a
+rompere	v.	Va	def-a
+riflettere	v.	Va	def-a
+infrangere	v.t.	Va	def-a
+collocare	v.	Va	def-a
+sedersi	v.	Ve	
+perseguire	v.t.	Va	def-a
+ingombrare	v.t.	Va	def-a
+sbadigliare	v.i.	Va	def-a
+lanciare	v.t.	Va	def-a
+somigliare	v.t.	Va	def-a
+spazzolare	v.	Va	def-a
+truccare	v.	Va	def-a
+ammassare	v.	Va	def-a
+leggere	v.	Va	def-a
+studiare	v.	Va	def-a
+disegnare	v.t.	Va	def-a
+fumare	v.i.	Va	def-a
+ricordare	v.t.	Va	def-a
+strofinare	v.	Va	def-a
+lavare	v.	Va	def-a
+stirare i vestiti	v.	Va	def-a
+scolorire	v.	Va	def-a
+funzionare	v.i.	Va	def-a
+superare	v.	Va	def-a
+guardare in basso	v.	Va	def-a
+esporre	v.	Va	def-a
+falciare	v.	Va	def-a
+germogliare	v.i.	Va	def-a
+innaffiare	v.	Va	def-a
+sarchiare	v.	Va	def-a
+appianare	v.	Va	def-a
+zappare	v.	Va	def-a
+scivolare	v.	Va	def-a
+nascondere	v.	Va	def-a
+deviare	v.	Va	def-a
+conservare	v.	Va	def-a
+contenere	v.	Va	def-a
+fermare	v.	Va	def-a
+rottamare	v.	Va	def-a
+bloccare	v.	Va	def-a
+sistemare	v.	Va	def-a
+affittare	v.	Va	def-a
+dare in affitto	v.	Va	def-a
+perdere	v.i.	Va	def-a
+raccomandare	v.t.	Va	def-a
+traslocare	v.i.	Va	def-a
+avvicinare	v.i.	Va	def-a
+piegare	v.i.	Va	def-a
+spaccare	v.i.	Va	def-a
+spedire	v.i.	Va	def-a
+colmare	v.i.	Va	def-a
+scostare	v.i.	Va	def-a
+avviare	v.t.	Va	def-a
+maledire	v.t.	Va	def-a
+imballare	v.t.	Va	def-a
+decorare	v.t.	Va	def-a
+verniciare	v.t.	Va	def-a
+spolverare	v.t.	Va	def-a
+incollare	v.t.	Va	def-a
+comprare	v.t.	Va	def-a
+trattare sul prezzo	v.t.	Va	def-a
+abbassare	v.t.	Va	def-a
+pagare in anticipo	v.t.	Va	def-a
+pagare	v.t.	Va	def-a
+alzare	v.t.	Va	def-a
+firmare	v.t.	Va	def-a
+prenotare	v.	Va	def-a
+organizzare	v.	Va	def-a
+annullare	v.	Va	def-a
+compilare	v.	Va	def-a
+accogliere	v.	Va	def-a
+registrare	v.	Va	def-a
+iscrivere	v.	Va	def-a
+scattare	v.	Va	def-a
+pregare	v.t.	Va	def-a
+editare	动 v.tr.	Va	def-a
+pubblicare	动 v.tr.	Va	def-a
+comporre	动 v.tr.	Va	def-a
+impaginare	动 v.tr.	Va	def-a
+correggere	动 v.tr.	Va	def-a
+stampare	动 v.tr.	Va	def-a
+svelare	动 v.tr.	Va	def-a
+fare acquisti online	动 v.tr.	Va	def-a
+inserire	动 v.tr.	Va	def-a
+scegliere	动 v.tr.	Va	def-a
+chiacchierare	动 v.intr.	Va	def-a
+adorare	v.tr.	Va	def-a
+comprare	v.tr.	Va	def-a
+attaccare	动 v.tr.	Va	def-a
+ferire	动 v.tr.	Va	def-a
+mescolare le carte	动	Va	def-a
+tagliare le carte	动	Va	def-a
+distribuire le carte	动	Va	def-a
+fornire	v.tr.	Va	def-a
+replicò	v.tr.	Va	def-a
+spiegare	v.tr.	Va	def-a
+vincere	动	Va	def-a
+perdere	动	Va	def-a
+fare le puntate	动	Va	def-a
+unire	v.tr.	Va	def-a
+raddoppiare	v.tr.	Va	def-a
+scacco matto	动	Va	def-a
+catturare	动	Va	def-a
+bloccare	动	Va	def-a
+giocare	v.intr.	Va	def-a
+sgranchire	v.tr.	Va	def-a
+partecipare	v.intr.	Va	def-a
+sfuggire	v.intr.	Va	def-a
+presagire	动	Va	def-a
+amare	v.tr.	Va	def-a
+lanciare	动 v.tr.	Va	def-a
+guidare un gruppo	动 v.tr.	Va	def-a
+divergere	v.intr.	Va	def-a
+terminare	动 v.tr.	Va	def-a
+fallire	动 v.intr.	Va	def-a
+aggirare	动 v.tr.	Va	def-a
+non afferrare	动 v.tr.	Va	def-a
+tiro da sotto canestro	动 v.tr.	Va	def-a
+progredire	v.intr.	Va	def-a
+scoraggiare	v.tr.	Va	def-a
+cooperare	动 v.intr.	Va	def-a
+fingere	动 v.tr.	Va	def-a
+simulare	动 v.tr.	Va	def-a
+differire	动 v.tr.	Va	def-a
+attaccare	动 v.tr.	Va	def-a
+difendere	动 v.tr.	Va	def-a
+controllare	动 v.tr.	Va	def-a
+coprire	动 v.tr.	Va	def-a
+tenere	动 v.tr.	Va	def-a
+violare	动 v.tr.	Va	def-a
+trasgredire	动 v.tr.	Va	def-a
+fischiare	动 v.intr.	Va	def-a
+fermare la gara	动 v.tr.	Va	def-a
+avvertire	动 v.tr.	Va	def-a
+confrontare	动 v.tr.	Va	def-a
+dribblare	动	Va	def-a
+giocare	动	Va	def-a
+battere	v.tr.	Va	def-a
+concedere	v.tr.	Va	def-a
+costruire	动	Va	def-a
+parlare	v.intr.	Va	def-a
+raccogliere la palla	动	Va	def-a
+fallire il servizio	动	Va	def-a
+formare	动	Va	def-a
+battere	动	Va	def-a
+correre	动	Va	def-a
+saltare	动	Va	def-a
+attaccare	动	Va	def-a
+passare rombando	动	Va	def-a
+sfrecciare	动	Va	def-a
+decollare	v.intr.	Va	def-a
+sfruttare	动	Va	def-a
+purificare	v.tr.	Va	def-a
+suscitare	v.tr.	Va	def-a
+soffiare	动	Va	def-a
+curvare	v.tr.	Va	def-a
+dissipare	动	Va	def-a
+grandinare	动	Va	def-a
+bruciare	v.tr.	Va	def-a
+defluire	动 v.	Va	def-a
+saturare	v.tr.	Va	def-a
+fiorire	动 v.	Ve	
+germogliare	动 v.	Va	def-a
+abbattere	动 v.	Va	def-a
+riconoscere	v.tr.	Va	def-a
+sollevare	v.tr.	Va	def-a
+strisciare	动 v.	Va	def-a
+digerire	v.tr.	Va	def-a
+nascere	动 v.	Ve	
+figliare	动 v.	Va	def-a
+addomesticare	v.tr.	Va	def-a
+planare	动 —	Va	def-a
+afferrare	动 —	Va	def-a
+nutrire	动 —	Va	def-a
+allevare	动 —	Va	def-a
+sterminare	动 —	Va	def-a
+trionfare	v.intr.	Va	def-a
+abbronzarsi	动 —	Ve	
+passare la notte a casa di qn	动 —	Va	def-a
+viaggiare	动 —	Va	def-a
+esplorare	动 —	Va	def-a
+fermare	动 —	Va	def-a
+incoraggiare	v.tr.	Va	def-a
+passeggiare	v.intr.	Va	def-a
+spegnere	动 —	Va	def-a
+incrinare	动 —	Va	def-a
+osservare	动 —	Va	def-a
+misurare	动 —	Va	def-a
+annaffiare	v.tr.	Va	def-a
+immergere	v.tr.	Va	def-a
+proteggere	动 v.	Va	def-a
+emanare	v.intr.	Va	def-a
+scalare una montagna	动 v.	Va	def-a
+salire	动 v.	Ve	
+tagliare	v.tr.	Va	def-a
+mangiare l'erba	动 v.	Va	def-a
+estendere	动 v.	Va	def-a
+sfrecciare	动 v.	Va	def-a
+pescare all'amo	动 v.	Va	def-a
+pescare alla lenza	动 v.	Va	def-a
+rosicchiare	动 v.	Va	def-a
+circondare	动 v.	Va	def-a
+misurare	v.tr.	Va	def-a
+scorrere	动 v.	Va	def-a
+inondare	动 v.	Va	def-a
+seguire la corrente	动 v.	Va	def-a
+precipitare	动 v.	Va	def-a
+fermare	v.tr.	Va	def-a
+causare	动 v.tr.	Va	def-a
+scavare	动 v.tr.	Va	def-a
+erodere	动 v.tr.	Va	def-a
+nuotare	动 v.intr.	Va	def-a
+collezionare	动 v.tr.	Va	def-a
+squamare	动 v.tr.	Va	def-a
+scegliere	v.tr.	Va	def-a
+coltivare la terra	动 loc.v.	Va	loc-v
+arare la terra	动 loc.v.	Va	loc-v
+coltivare	动 v.tr.	Va	def-a
+apparire	v.intr.	Ve	
+seminare	动 v.tr.	Va	def-a
+nutrire	动 v.tr.	Va	def-a
+fingere	动 v.tr.	Va	def-a
+disarmare	动 v.tr.	Va	def-a
+riconoscere	动 v.tr.	Va	def-a
+arruolare	动 v.tr.	Va	def-a
+sorprendere	动 v.tr.	Va	def-a
+saccheggiare	动 v.tr.	Va	def-a
+violare	动 v.tr.	Va	def-a
+annientare	动 v.tr.	Va	def-a
+respingere	动 v.tr.	Va	def-a
+occupare	动 v.tr.	Va	def-a
+abbassare	动 v.tr.	Va	def-a
+alzare	动 v.tr.	Va	def-a
+attaccare	动 v.tr.	Va	def-a
+crollare	动 v.intr.	Va	def-a
+distruggere	v.tr.	Va	def-a
+cogliere	动 v.tr.	Va	def-a
+coprire	动 v.tr.	Va	def-a
+coltivare	动 v.tr.	Va	def-a
+saltare	动 v.intr.	Va	def-a
+appoggiare	动 v.tr.	Va	def-a
+puntellare	动 v.tr.	Va	def-a
+allungare	动 v.tr.	Va	def-a
+effettuare il rilievo	动 v.tr.	Va	def-a
+calcolare	动 v.tr.	Va	def-a
+enumerare	动 v.tr.	Va	def-a
+ricominciare	v.tr.	Va	def-a
+campeggiare	动 v.intr.	Va	def-a
+fare un campeggio	动 v.tr.	Va	def-a
+montare una tenda	动 v.tr.	Va	def-a
+essere in stato di veglia	动 v.intr.	Ve	
+sopravvivere	动 v.intr.	Ve	
+tornare	v.intr.	Ve	
+montare	v.tr.	Va	def-a
+esporre	动 v.tr.	Va	def-a
+essere in ombra	动 v.intr.	Ve	
+fotografare	动 v.tr.	Va	def-a
+proteggere	v.tr.	Va	def-a
+sostenere	v.	Va	def-a
+riscaldare	v.	Va	def-a
+ribadire	v.	Va	def-a
+sviluppare	v.	Va	def-a
+iniziare	v.	Va	def-a
+rovesciare	v.	Va	def-a
+accumulare	v.	Va	def-a
+eleggere	v.	Va	def-a
+partecipare a una campagna elettorale	v.	Va	def-a
+rimanere in carica	v.	Ve	
+argomentare	v.	Va	def-a
+cacciare	v.	Va	def-a
+ammettere	v.	Va	def-a
+rimettere	v.	Va	def-a
+fondare	v.	Va	def-a
+rompere	v.	Va	def-a
+ristabilire	v.	Va	def-a
+cooperare	v.	Va	def-a
+protestare	v.	Va	def-a
+sospendere	v.	Va	def-a
+possedere	v.	Va	def-a
+assumere	v.	Va	def-a
+dovere	v.	Va	def-a
+sfilare	v.	Va	def-a
+violare	v.	Va	def-a
+unire	v.	Va	def-a
+stampare	v.	Va	def-a
+promuovere	v.	Va	def-a
+nazionalizzare	v.	Va	def-a
+rivivere	v.	Va	def-a
+promuovere	v.	Va	def-a
+lavorare	v.	Va	def-a
+sbloccare i prezzi	v.	Va	def-a
+intervenire	v.	Ve	
+evitare	v.	Va	def-a
+conciliare	v.	Va	def-a
+ambire	v.	Va	def-a
+graffiare	v.	Va	def-a
+circolare	v.	Va	def-a
+contraffare	v.	Va	def-a
+svalutare	v.	Va	def-a
+rilanciare su	v.	Va	def-a
+diagnosticare	v.	Va	def-a
+utilizzare	v.	Va	def-a
+manifestare	v.	Va	def-a
+avventurarsi	v.	Ve	
+risolvere	v.	Va	def-a
+distribuire	v.	Va	def-a
+depositare	v.	Va	def-a
+investire	v.	Va	def-a
+rischiare	v.	Va	def-a
+suscitare	v.	Va	def-a
+amministrare gli affari di denaro	v.	Va	def-a
+contribuire	v.	Va	def-a
+rendere	v.	Va	def-a
+sistemare	v.	Va	def-a
+ipotecare	v.	Va	def-a
+allargare	v.	Va	def-a
+restituire	v.	Va	def-a
+rimborsare	v.	Va	def-a
+eguagliare	v.	Va	def-a
+rinviare a più tardi	v.	Va	def-a
+lavorare	v.	Va	def-a
+costituire	v.	Va	def-a
+cambiare	v.	Va	def-a
+operare	v.	Va	def-a
+influenzare	v.	Va	def-a
+emettere	v.	Va	def-a
+esentare	v.	Va	def-a
+condurre una vita oziosa	v.	Va	def-a
+lasciare il proprio impiego	v.	Va	def-a
+attendere	v.	Va	def-a
+acquisire	v.	Va	def-a
+andare in chiesa	v.	Ve	
+reclutare	v.	Va	def-a
+diffondere	v.	Va	def-a
+passeggiare	v.	Va	def-a
+rispettare	v.	Va	def-a
+turbare	v.	Va	def-a
+convocare	v.	Va	def-a
+terminare	v.	Va	def-a
+formulare	v.	Va	def-a
+obbedire	v.	Va	def-a
+sospendere	v.	Va	def-a
+commettere	v.	Va	def-a
+delinquere	v.	Va	def-a
+supporre	v.	Va	def-a
+sanzionare	v.	Va	def-a
+saccheggiare	v.	Va	def-a
+rapinare	v.	Va	def-a
+rubare	v.	Va	def-a
+violentare	v.	Va	def-a
+attaccare	v.	Va	def-a
+assassinare	v.	Va	def-a
+contraffare	v.	Va	def-a
+appiccare un incendio	v.	Va	def-a
+corrompere	v.	Va	def-a
+intercettare	v.	Va	def-a
+rapire	v.	Va	def-a
+scontare una pena	v.	Va	def-a
+fucilare	v.	Va	def-a
+liberare	v.	Va	def-a
+rilasciare	v.	Va	def-a
+denunciare	v.	Va	def-a
+accusare	v.	Va	def-a
+guidare	v.tr.	Va	def-a
+cadere	v.i.	Ve	
+straziare	v.t.	Va	def-a
+trasformare	v.t.	Va	def-a
+imbarcarsi	v.i.	Ve	
+sbarcare	v.i.	Va	def-a
+atterrare	v.i.	Va	def-a
+decollare	v.i.	Va	def-a
+galleggiare	v.i.	Va	def-a
+navigare	v.i.	Va	def-a
+rientrare	v.i.	Va	def-a
+pagaiare	v.i.	Va	def-a
+spedire	v.i.	Va	def-a
+allacciare	v.t.	Va	def-a
+urtare	v.	Va	def-a
+morire	v.	Ve	
+ferire	v.	Va	def-a
+ammaccare	v.	Va	def-a
+esplodere	v.	Va	def-a
+vivere	v.i.	Va	def-a
+girare	v.t.	Va	def-a
+dormire	v.pr.	Ve	
+attraversare	v.	Va	def-a
+incrociare	v.	Va	def-a
+cessare	v.	Va	def-a
+areare	v.	Va	def-a
+ingombrare	v.	Va	def-a
+abbandonare	v.	Va	def-a
+pestare i piedi	v.	Va	def-a
+gettare tra i rifiuti	v.	Va	def-a
+provocare	v.t.	Va	def-a
+alloggiare	v.t.	Va	def-a
+sospendere	v.	Va	def-a
+prendere	v.	Va	def-a
+accedere	v.	Va	def-a
+pagare con carta	v.	Va	def-a
+presentare	v.	Va	def-a
+trasferire	v.	Va	def-a
+cambiare	v.	Va	def-a
+fare la coda	v.	Va	def-a
+diffidare	v.	Va	def-a
+mancare	v.	Va	def-a
+guidare	v.	Va	def-a
+deragliare	v.	Va	def-a
+utilizzare	v.	Va	def-a
+trasmettere	v.	Va	def-a
+ispezionare	v.	Va	def-a
+preparare	v.	Va	def-a
+permettere	v.	Va	def-a
+lasciare	v.	Va	def-a
+scendere	v.	Ve	
+volteggiare	v.	Va	def-a
+atterrare	v.	Va	def-a
+arrivare	v.	Ve	
+distruggere	v.t.	Va	def-a
+informare	v.t.	Va	def-a
+scannerizzare	v.	Va	def-a
+passare lo sguardo su	v.	Va	def-a
+fermarsi	v.	Ve	
+verificare	v.t.	Va	def-a
+sostare	v.i.	Va	def-a
+aumentare	v.	Va/Ve	
+aggiungere	v.	Va	def-a
+mancare	v.	Va	def-a
+vietare	v.	Va	def-a
+fumare	v.i.	Va	def-a
+raggiungere	v.	Va	def-a
+arenarsi	v.	Ve	
+colpire	v.t.	Va	def-a
+girare	v.	Va	def-a
+suonare il clacson	v.i.	Va	def-a
+far rispettare	v.t.	Va	def-a
+aggirare	v.	Va	def-a
+seguire	v.	Va	def-a
+mantenere l'ordine	v.	Va	def-a
+confiscare	v.	Va	def-a
+importare	v.	Va	def-a
+esportare	v.	Va	def-a
+permettere	v.	Va	def-a
+detrarre	v.t.	Va	def-a
+accelerare	v.	Va	def-a
+premere	v.	Va	def-a
+rallentare	v.	Va	def-a
+funzionare male	v.	Va	def-a
+guidare	v.	Va	def-a
+passare col rosso	v.	Va	def-a
+urtare	v.	Va	def-a
+scontrarsi	v.	Ve	
+girare	v.i.	Va	def-a
+mantenere	v.	Va	def-a
+riparare	v.	Va	def-a
+rimettere in sesto	v.	Va	def-a
+lubrificare	v.	Va	def-a
+cerare	v.	Va	def-a
+impedire	v.t.	Va	def-a
+degenerare	v.i.	Va	def-a
+ricordare	v.t.	Va	def-a
+dirigere	v.t.	Va	def-a
+comprendere	v.t.	Va	def-a
+navigare	v.i.	Va	def-a
+trasmettere via radio	v.	Va	def-a
+deragliare	v.i.	Va	def-a
+gonfiare	v.	Va	def-a
+andare in bicicletta	v.	Ve	
+frenare	v.	Va	def-a
+rompe	v.t.	Va	def-a
+aggiornare	v.	Va	def-a
+giustificare	v.	Va	def-a
+condannare	v.	Va	def-a
+giudicare	v.	Va	def-a
+detenere	v.	Va	def-a
+imprigionare	v.	Va	def-a
+detenere	v.	Va	def-a
+arrestare	v.	Va	def-a
+rilasciare su cauzione	v.	Va	def-a
+risarcire	v.	Va	def-a
+accusare	v.	Va	def-a
+deferire	v.	Va	def-a
+interrogare	v.	Va	def-a
+interrogare a fondo	v.	Va	def-a
+incolpare	v.	Va	def-a
+esercitare azioni legali	v.	Va	def-a
+giudicare	v.	Va	def-a
+respingere	v.	Va	def-a
+fallire	v.	Va	def-a
+minacciare	v.	Va	def-a
+truffare	v.	Va	def-a
+corrompere	v.	Va	def-a
+violare un contratto	v.	Va	def-a
+precisare	v.	Va	def-a
+dilapidare	v.	Va	def-a
+sparare	v.	Va	def-a
+accendere un fuoco	v.	Va	def-a
+mirare	v.	Va	def-a
+aprire il fuoco	v.	Va	def-a
+irraggiare	v.	Va	def-a
+lanciare	v.	Va	def-a
+sganciare	v.	Va	def-a
+ricognoscere	v.	Va	def-a
+studiare	v.	Va	def-a
+scoprire	v.	Va	def-a
+ricombinare	v.	Va	def-a
+annotare	v.	Va	def-a
+leggere	v.	Va	def-a
+felicitare	v.	Va	def-a
+proteggere	v.	Va	def-a
+migliorare	v.	Va	def-a
+abbellire	v.	Va	def-a
+adattare	v.	Va	def-a
+mantenere	v.	Va	def-a
+sensibilizzare	v.	Va	def-a
+meritare	v.	Va	def-a
+scivolare	v.	Va	def-a
+seppellire	v.	Va	def-a
+distruggere	v.	Va	def-a
+provocare	v.	Va	def-a
+tremare	v.	Va	def-a
+vibrare	v.	Ve	
+scuotere	v.	Va	def-a
+osservare	v.	Va	def-a
+esplorare	v.	Va	def-a
+prevedere	v.	Va	def-a
+radunare	v.	Va	def-a
+solidificare	v.	Va	def-a
+avvizzire	v.	Va	def-a
+evaporare	v.	Va	def-a
+fondere	v.	Va	def-a
+controllare	v.	Va	def-a
+evitare	v.	Va	def-a
+scontrarsi	v.	Ve	
+cozzare	v.	Va	def-a
+capottare	v.	Va	def-a
+saccheggiare	v.	Va	def-a
+rubare	v.	Va	def-a
+sottrarre	v.	Va	def-a
+sbocciare	v.	Va	def-a
+carbonizzare	v.	Va	def-a
+bruciare	v.	Va	def-a
+spegnere	v.	Va	def-a
+accorrere	v.	Va	def-a
+suicidarsi	v.	Ve	
+impiccarsi	v.	Ve	
+indagare	v.	Va	def-a
+interrogare	v.	Va	def-a
+uccidere	v.	Va	def-a
+intimidire	v.	Va	def-a
+condannare	v.	Va	def-a
+scoppiare	v.	Va	def-a
+distruggere	v.	Va	def-a
+assalire	v.	Va	def-a
+ricostruire	v.	Va	def-a
+scolpire	v.	Va	def-a
+incidere	v.	Va	def-a
+cesellare	v.	Va	def-a
+scalpellare	v.	Va	def-a
+soffrire	v.	Va	def-a
+costruire	v.	Va	def-a
+interpretare	v.	Va	def-a
+tappare	v.	Va	def-a
+vendere	v.	Va	def-a
+offrire	v.	Va	def-a
+aggiudicare	v.	Va	def-a
+cedere	v.	Va	def-a
+trasferire	v.	Va	def-a
+sviluppare	v.	Va	def-a
+trasformare	v.	Va	def-a
+valutare	v.	Va	def-a
+apprezzare	v.	Va	def-a
+stordire	v.tr.	Va	def-a
+preferire	v.tr.	Va	def-a
+proporzionare	v.tr.	Va	def-a
+sudare	v.intr.	Va	def-a
+ricostituire le forze	v.tr.	Va	def-a
+affliggere	v.tr.	Va	def-a
+misurare	v.tr.	Va	def-a
+prescrivere	v.tr.	Va	def-a
+diagnosticare	v.tr.	Va	def-a
+prendere	v.tr.	Va	def-a
+trattare	v.tr.	Va	def-a
+curare	v.tr.	Va	def-a
+guarire	v.tr.	Va	def-a
+evolvere	v.intr.	Va	def-a
+esaminare	v.tr.	Va	def-a
+ispezionare	v.tr.	Va	def-a
+raffreddarsi	v.rifl.	Ve	
+misurare	v.tr.	Va	def-a
+ammalarsi	v.rifl.	Ve	
+prendere freddo	v.tr.	Va	def-a
+sudare	v.intr.	Va	def-a
+starnutire	v.intr.	Va	def-a
+preoccupare	v.tr.	Va	def-a
+alleviare	v.tr.	Va	def-a
+liberare	v.tr.	Va	def-a
+singhiozzare	v.intr.	Va	def-a
+solleticare	v.tr.	Va	def-a
+trapiantare	v.tr.	Va	def-a
+perdere	v.tr.	Va	def-a
+pescare	v.tr.	Va	def-a
+apprezzare	v.tr.	Va	def-a
+ricoverare un malato in ospedale	v.tr.	Va	def-a
+morire	v.intr.	Ve	
+preoccuparsi di	v.rifl.	Ve	
+occuparsi di	v.rifl.	Ve	
+sorvegliare	v.tr.	Va	def-a
+limitare	v.tr.	Va	def-a
+fabbricare	v.tr.	Va	def-a
+effettuare un'operazione	v.tr.	Va	def-a
+suturare	v.tr.	Va	def-a
+escidere	v.tr.	Va	def-a
+anestetizzare	v.tr.	Va	def-a
+schiacciato	v.tr.	Va	def-a
+spedire	v.tr.	Va	def-a
+collezionare	v.tr.	Va	def-a
+consegnare	v.tr.	Va	def-a
+inviare	v.tr.	Va	def-a
+dividere	v.tr.	Va	def-a
+inviare denaro	v.tr.	Va	def-a
+detestare	v.tr.	Va	def-a
+avvicinare	v.tr.	Va	def-a
+incollare	v.tr.	Va	def-a
+segnare	v.tr.	Va	def-a
+emettere	v.tr.	Va	def-a
+consegnare	v.tr.	Va	def-a
+stipulare un'assicurazione	v.tr.	Va	def-a
+quietanzare	v.tr.	Va	def-a
+aprire un conto	v.tr.	Va	def-a
+congelare	v.tr.	Va	def-a
+comprare a credito	v.	Va	def-a
+girare	v.tr.	Va	def-a
+cambiare	v.tr.	Va	def-a
+depositare	v.tr.	Va	def-a
+versare	v.tr.	Va	def-a
+bonificare	v.tr.	Va	def-a
+incassare un assegno	v.tr.	Va	def-a
+onorare	v.tr.	Va	def-a
+incassare	v.tr.	Va	def-a
+sconvolgere	v.tr.	Va	def-a
+tagliarsi i capelli	v.rifl.	Ve	
+pettinare	v.tr.	Va	def-a
+accorciare	v.tr.	Va	def-a
+tosare	v.tr.	Va	def-a
+arricciare i capelli	v.tr.	Va	def-a
+dividere	v.tr.	Va	def-a
+pettinato	v.tr.	Va	def-a
+ammorbidire	v.tr.	Va	def-a
+risciacquare	v.tr.	Va	def-a
+distinguere	v.tr.	Va	def-a
+pregare	v.intr.	Va	def-a
+risparmiare	v.tr.	Va	def-a
+addomesticare	v.tr.	Va	def-a
+vedere da lontano	v.	Va	def-a
+decidere	v.tr.	Va	def-a
+proporre	v.intr.	Va	def-a
