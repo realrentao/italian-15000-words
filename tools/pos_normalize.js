@@ -179,7 +179,8 @@ for (const f of files) {
   }
   if (APPLY && fileChanged) {
     // 重新序列化：保持原格式 window.BOOK_DATA[gid]={...}; 单行 JSON
-    const out = arr.filter(Boolean).map(g => "window.BOOK_DATA[" + g.gid + "]=" + JSON.stringify(g) + ";").join("\n") + "\n";
+    const out = "window.BOOK_DATA=window.BOOK_DATA||{};\n" +
+      arr.filter(Boolean).map(g => "window.BOOK_DATA[" + g.gid + "]=" + JSON.stringify(g) + ";").join("\n") + "\n";
     fs.writeFileSync(dir + "/" + f, out);
   }
 }
