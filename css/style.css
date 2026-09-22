@@ -136,7 +136,8 @@ button{cursor:pointer;background:none;border:none}
 .row .es{font-size:17px;font-weight:600;color:var(--tx);word-break:break-word;cursor:pointer}
 .row .es:hover{color:var(--red)}
 .row .pos{font-size:11px;color:var(--tx3);background:var(--bg);
-  border:1px solid var(--line);border-radius:4px;padding:0 5px;flex:0 0 auto}
+  border:1px solid var(--line);border-radius:4px;padding:0 5px;flex:0 0 auto;
+  font-style:italic;font-family:"Charis SIL","Doulos SIL","Segoe UI",serif}
 /* 意语词性标注置于意大利语单词后方（line-es 内，紧跟单词） */
 .row .pos{margin-left:0}
 /* 中文翻译对应的词性标签（意语词性共用 it[2]，红色调区分） */
