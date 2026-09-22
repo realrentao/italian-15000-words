@@ -589,6 +589,7 @@
           };
           s.w.forEach(function (x) { push(x[1], x[0], x[2]); });
           s.e.forEach(function (x) { push(x[1], x[0], x[2]); });
+          s.s.forEach(function (x) { push(x[0], x[1], x[2]); });
         });
       });
       var h = '<div class="sr-head">找到 ' + res.length + ' 条'
@@ -845,7 +846,8 @@
               uid: uid(p.gid, p.sec.no, kind, i), kind: kind,
               es: it[(kind === "s" ? 0 : 1)], zh: it[(kind === "s" ? 1 : 0)],
               ae: it[3], az: it[4], py: it[5], ipa: it[6],
-              af: (kind === "s" ? "" : (it[7] || "")), fem: (kind === "s" ? "" : (it[8] || ""))
+              af: (kind === "s" ? "" : (it[7] || "")), fem: (kind === "s" ? "" : (it[8] || "")),
+              src: (kind === "s" ? (it[2] || "") : "")
             });
           });
         });
