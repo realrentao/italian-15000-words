@@ -434,28 +434,27 @@
     // 连播时预取后续若干条，减少切换卡顿
     for (var k = 1; k <= 3; k++) {
       var nx = P.list[P.i + k];
-      if (nx) preloadAudio(nx.src);
+      if (nx) warmAudio(nx.src);
     }
   }
 
-  /* 音频缓存：同一 src 复用 Audio 对象（避免重复解码）；首次播放前由 preloadAudio 提前拉取。
-     缓存设上限以保护内存，超出后淘汰最旧条目。 */
-  var ACACHE = {}, ACACHE_KEYS = [];
-  function getAudio(src) {
-    var a = ACACHE[src];
-    if (!a) {
-      a = new Audio(src); a.preload = "auto";
-      ACACHE[src] = a; ACACHE_KEYS.push(src);
-      if (ACACHE_KEYS.length > 400) {
-        var old = ACACHE_KEYS.shift(), oa = ACACHE[old];
-        if (oa) { try { oa.pause(); } catch (e) { } oa.src = ""; }
-        delete ACACHE[old];
-      }
-    }
-    return a;
+  /* 音频预热：用 fetch 把文件拉入浏览器 HTTP 缓存（带并发上限 WARM_MAX）。
+     不长期持有 <audio> 对象，避免一次性 new 上百个 media 元素占满 CDN 的 ~6 条并发连接、
+     把用户真正点击的播放请求堵在队列后面（表现为“不能即时播放”）。
+     点击发音时每次 new Audio(src)，文件已在 HTTP 缓存中，即时出声。 */
+  var WARM = {}, WARM_Q = [], WARM_RUN = 0, WARM_MAX = 4;
+  function warmAudio(src) {
+    if (!src || WARM[src]) return;
+    WARM[src] = true; WARM_Q.push(src); pumpWarm();
   }
-  function preloadAudio(src) {
-    if (src) getAudio(src);            // 触发预取；已缓存则无操作
+  function pumpWarm() {
+    while (WARM_RUN < WARM_MAX && WARM_Q.length) {
+      var src = WARM_Q.shift();
+      WARM_RUN++;
+      fetch(src, { cache: "force-cache" })
+        .then(function () { WARM_RUN--; pumpWarm(); })
+        .catch(function () { WARM_RUN--; pumpWarm(); });
+    }
   }
   // 进入某小节后预取该节全部音频（意/中/阴性形态），使点击发音即时响应
   function preloadSectionAudio(sec) {
@@ -463,9 +462,9 @@
     ["w", "s", "e"].forEach(function (k) {
       (sec[k] || []).forEach(function (it) {
         if (Array.isArray(it)) {
-          if (it[3]) preloadAudio(AUDIO + it[3]);
-          if (it[4]) preloadAudio(AUDIO + it[4]);
-          if (it[7]) preloadAudio(AUDIO + it[7]); // 阴性形态音频
+          if (it[3]) warmAudio(AUDIO + it[3]);
+          if (it[4]) warmAudio(AUDIO + it[4]);
+          if (it[7]) warmAudio(AUDIO + it[7]); // 阴性形态音频
         }
       });
     });
@@ -563,7 +562,8 @@
   }
 
   function say(src, btn) {
-    var a = getAudio(src);
+    // 每次新建 Audio：保证总是从头播放，避免复用已 ended 的缓存对象导致二次点击无声
+    var a = new Audio(src);
     a.playbackRate = rate();
     if (btn) {
       btn.classList.add("on");
@@ -922,9 +922,9 @@
     // 预取当前及后续若干张卡的音频，使翻卡/朗读即时响应
     for (var si = study.i; si < Math.min(study.i + 5, study.items.length); si++) {
       var cit = study.items[si];
-      if (cit.ae) preloadAudio(AUDIO + cit.ae);
-      if (cit.az) preloadAudio(AUDIO + cit.az);
-      if (cit.af) preloadAudio(AUDIO + cit.af);
+      if (cit.ae) warmAudio(AUDIO + cit.ae);
+      if (cit.az) warmAudio(AUDIO + cit.az);
+      if (cit.af) warmAudio(AUDIO + cit.af);
     }
     study.cur = study.items[study.i];
     if (study.mode === "card") renderCard(study.cur, el("studyBody"), el("studyFoot"));
