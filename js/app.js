@@ -200,6 +200,8 @@
       bindContent();
       stopPlay();
       renderToc();
+      // 延迟到下一帧预取本节音频，避免阻塞首屏渲染
+      setTimeout(function () { preloadSectionAudio(sec); }, 0);
     });
   }
 
@@ -429,13 +431,44 @@
   }
 
   function preloadNext() {
-    var nx = P.list[P.i + 1];
-    if (!nx) return;
-    try {
-      if (!P.pre) P.pre = new Audio();
-      P.pre.preload = "auto";
-      P.pre.src = nx.src;      // 独立对象，不绑定任何回调
-    } catch (e) { }
+    // 连播时预取后续若干条，减少切换卡顿
+    for (var k = 1; k <= 3; k++) {
+      var nx = P.list[P.i + k];
+      if (nx) preloadAudio(nx.src);
+    }
+  }
+
+  /* 音频缓存：同一 src 复用 Audio 对象（避免重复解码）；首次播放前由 preloadAudio 提前拉取。
+     缓存设上限以保护内存，超出后淘汰最旧条目。 */
+  var ACACHE = {}, ACACHE_KEYS = [];
+  function getAudio(src) {
+    var a = ACACHE[src];
+    if (!a) {
+      a = new Audio(src); a.preload = "auto";
+      ACACHE[src] = a; ACACHE_KEYS.push(src);
+      if (ACACHE_KEYS.length > 400) {
+        var old = ACACHE_KEYS.shift(), oa = ACACHE[old];
+        if (oa) { try { oa.pause(); } catch (e) { } oa.src = ""; }
+        delete ACACHE[old];
+      }
+    }
+    return a;
+  }
+  function preloadAudio(src) {
+    if (src) getAudio(src);            // 触发预取；已缓存则无操作
+  }
+  // 进入某小节后预取该节全部音频（意/中/阴性形态），使点击发音即时响应
+  function preloadSectionAudio(sec) {
+    if (!sec) return;
+    ["w", "s", "e"].forEach(function (k) {
+      (sec[k] || []).forEach(function (it) {
+        if (Array.isArray(it)) {
+          if (it[3]) preloadAudio(AUDIO + it[3]);
+          if (it[4]) preloadAudio(AUDIO + it[4]);
+          if (it[7]) preloadAudio(AUDIO + it[7]); // 阴性形态音频
+        }
+      });
+    });
   }
 
   function step() {
@@ -530,7 +563,7 @@
   }
 
   function say(src, btn) {
-    var a = new Audio(src);
+    var a = getAudio(src);
     a.playbackRate = rate();
     if (btn) {
       btn.classList.add("on");
@@ -886,6 +919,13 @@
 
   function renderStudy() {
     if (study.i >= study.items.length) { renderStudyDone(); return; }
+    // 预取当前及后续若干张卡的音频，使翻卡/朗读即时响应
+    for (var si = study.i; si < Math.min(study.i + 5, study.items.length); si++) {
+      var cit = study.items[si];
+      if (cit.ae) preloadAudio(AUDIO + cit.ae);
+      if (cit.az) preloadAudio(AUDIO + cit.az);
+      if (cit.af) preloadAudio(AUDIO + cit.af);
+    }
     study.cur = study.items[study.i];
     if (study.mode === "card") renderCard(study.cur, el("studyBody"), el("studyFoot"));
     else if (study.mode === "spell") renderSpell(study.cur, el("studyBody"), el("studyFoot"));
