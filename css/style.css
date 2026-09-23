@@ -114,6 +114,25 @@ button{cursor:pointer;background:none;border:none}
 .nav-row button:hover:not(:disabled){border-color:var(--red);color:var(--red)}
 .nav-row button:disabled{opacity:.38;cursor:default}
 
+/* 页面底部：上一页 / 下一页 */
+.nav-foot{display:flex;gap:10px;margin-top:28px;padding-top:18px;
+  border-top:1px solid var(--line);flex-wrap:wrap}
+.nf-btn{flex:1 1 46%;min-width:150px;display:flex;flex-direction:column;gap:2px;
+  align-items:flex-start;padding:10px 14px;border:1px solid var(--line);
+  border-radius:10px;background:var(--card);text-align:left;color:var(--tx2);
+  box-shadow:var(--shadow)}
+.nf-btn:hover:not(:disabled){border-color:var(--red);color:var(--red)}
+.nf-btn:disabled{opacity:.45;cursor:default}
+.nf-btn .nf-dir{font-size:13.5px;font-weight:600;color:inherit}
+.nf-btn .nf-name{font-size:12px;color:var(--tx3);max-width:100%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nf-btn:hover:not(:disabled) .nf-name{color:var(--red)}
+.nf-next{align-items:flex-end;text-align:right}
+@media(max-width:560px){
+  .nf-btn{flex:1 1 100%}
+  .nf-next{align-items:flex-start;text-align:left}
+}
+
 .block{margin-bottom:22px}
 .block-hd{display:flex;align-items:center;gap:9px;margin-bottom:10px}
 .block-hd h3{margin:0;font-size:15.5px;font-weight:700}

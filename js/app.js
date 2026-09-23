@@ -195,6 +195,9 @@
         h += '<div class="empty">本节内容待补充 —— 在 <code>data/sec/'
           + pm.gid + '.js</code> 的对应小节里填入 w（终极分类词）/ s（经典实用句）/ e（词汇大拓展）即可显示。</div>';
 
+      // 页面底部：上一页 / 下一页
+      h += navFoot();
+
       content.innerHTML = h;
       window.scrollTo(0, 0);
       bindContent();
@@ -205,14 +208,63 @@
     });
   }
 
+  // 计算上/下一「页」(小节) 的目标位置；到边界返回 null（不改变 state）
+  function navTarget(dir) {
+    if (dir === "prev") {
+      if (state.s > 0) return { g: state.g, p: state.p, s: state.s - 1 };
+      var fi = flatIndex();
+      if (fi <= 0) return null;
+      var pv = FLAT[fi - 1];
+      return { g: pv.g, p: pv.p, s: META.grupos[pv.g].partes[pv.p].secs.length - 1 };
+    }
+    if (state.s < curParte().secs.length - 1) return { g: state.g, p: state.p, s: state.s + 1 };
+    var fi2 = flatIndex();
+    if (fi2 >= FLAT.length - 1) return null;
+    var nx = FLAT[fi2 + 1];
+    return { g: nx.g, p: nx.p, s: 0 };
+  }
+  // 目标位置的小节信息（含用于显示的标题）
+  function navTargetInfo(dir) {
+    var t = navTarget(dir);
+    if (!t) return null;
+    var gr = META.grupos[t.g];
+    if (!gr) return null;
+    var pt = gr.partes[t.p];
+    if (!pt) return null;
+    var sc = pt.secs[t.s];
+    if (!sc) return null;
+    var sameParte = (t.g === state.g && t.p === state.p);
+    return { name: sameParte ? sc.name : (pt.name + " · " + sc.name) };
+  }
+
   function navRow() {
-    var prev = '<button data-nav="prev">← 上一节</button>';
-    var next = '<button data-nav="next">下一节 →</button>';
-    var fi = flatIndex();
-    if (fi <= 0 && state.s <= 0) prev = '<button disabled>← 上一节</button>';
-    if (fi >= FLAT.length - 1 && state.s >= curParte().secs.length - 1)
-      next = '<button disabled>下一节 →</button>';
+    var pv = navTarget("prev"), nx = navTarget("next");
+    var prev = pv ? '<button data-nav="prev">← 上一节</button>' : '<button disabled>← 上一节</button>';
+    var next = nx ? '<button data-nav="next">下一节 →</button>' : '<button disabled>下一节 →</button>';
     return '<div class="nav-row">' + prev + next + '</div>';
+  }
+
+  // 页面底部的「上一页 / 下一页」，并显示将要跳转的小节标题
+  function navFoot() {
+    var pv = navTargetInfo("prev"), nx = navTargetInfo("next");
+    var h = '<div class="nav-foot">';
+    if (pv) {
+      h += '<button class="nf-btn nf-prev" data-nav="prev" title="上一页：' + esc(pv.name) + '">'
+        + '<span class="nf-dir">← 上一页</span>'
+        + '<span class="nf-name">' + esc(pv.name) + '</span></button>';
+    } else {
+      h += '<button class="nf-btn nf-prev" disabled><span class="nf-dir">← 上一页</span>'
+        + '<span class="nf-name">已达最前一节</span></button>';
+    }
+    if (nx) {
+      h += '<button class="nf-btn nf-next" data-nav="next" title="下一页：' + esc(nx.name) + '">'
+        + '<span class="nf-dir">下一页 →</span>'
+        + '<span class="nf-name">' + esc(nx.name) + '</span></button>';
+    } else {
+      h += '<button class="nf-btn nf-next" disabled><span class="nf-dir">下一页 →</span>'
+        + '<span class="nf-name">已达最后一节</span></button>';
+    }
+    return h + '</div>';
   }
   function flatIndex() {
     for (var i = 0; i < FLAT.length; i++)
@@ -293,21 +345,9 @@
   }
 
   function navigate(dir) {
-    if (dir === "prev") {
-      if (state.s > 0) state.s--;
-      else {
-        var fi = flatIndex();
-        if (fi > 0) { var pv = FLAT[fi - 1]; state.g = pv.g; state.p = pv.p; state.s = META.grupos[pv.g].partes[pv.p].secs.length - 1; }
-        else return;
-      }
-    } else {
-      if (state.s < curParte().secs.length - 1) state.s++;
-      else {
-        var fi2 = flatIndex();
-        if (fi2 < FLAT.length - 1) { var nx = FLAT[fi2 + 1]; state.g = nx.g; state.p = nx.p; state.s = 0; }
-        else return;
-      }
-    }
+    var t = navTarget(dir);
+    if (!t) return;
+    state.g = t.g; state.p = t.p; state.s = t.s;
     savePos(); render();
   }
 
