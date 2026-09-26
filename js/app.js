@@ -659,28 +659,44 @@
       var res = [], seen = {};
       FLAT.forEach(function (f) {
         var d = DATA[f.gid]; if (!d) return;
+        var parteName = f.name || "";
+        var parte = META.grupos[f.g] && META.grupos[f.g].partes[f.p];
+        var firstSecNo = parte && parte.secs[0] ? parte.secs[0].no : null;
         d.secs.forEach(function (s) {
           var push = function (es, zh, pos) {
-            var k = es + "|" + zh;
+            var k = "t|" + es + "|" + zh;
             if (seen[k]) return; seen[k] = 1;
             if (foldAcc(es).indexOf(fq) >= 0 || foldAcc(zh).indexOf(fq) >= 0)
-              res.push({ es: es, zh: zh, pos: pos, f: f, s: s });
+              res.push({ es: es, zh: zh, pos: pos, f: f, s: s, kind: "" });
           };
           s.w.forEach(function (x) { push(x[1], x[0], x[2]); });
           s.e.forEach(function (x) { push(x[1], x[0], x[2]); });
           s.s.forEach(function (x) { push(x[0], x[1], x[2]); });
+          /* 全局全书：章节标题(sec.name)与分册标题(parte.name)也纳入搜索 */
+          var secName = s.name || "";
+          if (secName && foldAcc(secName).indexOf(fq) >= 0) {
+            var ksec = "sec|" + f.gid + "|" + s.no;
+            if (!seen[ksec]) { seen[ksec] = 1; res.push({ es: secName, zh: "", pos: "", f: f, s: s, kind: "sec" }); }
+          }
+          if (parteName && foldAcc(parteName).indexOf(fq) >= 0 && firstSecNo != null) {
+            var kp = "parte|" + f.gid;
+            if (!seen[kp]) { seen[kp] = 1; res.push({ es: parteName, zh: "", pos: "", f: f, s: s, kind: "parte", sno: firstSecNo }); }
+          }
         });
       });
       var h = '<div class="sr-head">找到 ' + res.length + ' 条'
         + (res.length > 300 ? "（仅显示前 300 条）" : "") + '</div>';
       res.slice(0, 300).forEach(function (r) {
-        var gid = r.f.gid, sno = r.s.no;
-        h += '<div class="sr-item" data-gid="' + gid + '" data-sno="' + sno + '">'
+        var gid = r.f.gid, sno = (r.kind === "parte" && r.sno != null) ? r.sno : r.s.no;
+        var tag = r.kind === "sec" ? '<span class="sr-tag sr-tag-sec">章节</span>'
+                : r.kind === "parte" ? '<span class="sr-tag sr-tag-parte">分册</span>' : "";
+        h += '<div class="sr-item' + (r.kind ? " sr-" + r.kind : "") + '" data-gid="' + gid + '" data-sno="' + sno + '">'
+          + tag
           + '<span class="sr-es">' + esc(r.es) + '</span>'
-          + '<span class="sr-zh">' + esc(r.zh) + '</span>'
+          + (r.zh ? '<span class="sr-zh">' + esc(r.zh) + '</span>' : '')
           + '<span class="sr-pos">Parte ' + r.f.no + ' · ' + esc(r.f.name) + '</span></div>';
       });
-      if (!res.length) h += '<div class="empty">没有匹配的词条</div>';
+      if (!res.length) h += '<div class="empty">没有匹配的内容</div>';
       box.innerHTML = h;
       box.classList.remove("hidden");
       content.classList.add("hidden");
