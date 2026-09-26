@@ -74,6 +74,10 @@
     return String(t == null ? "" : t).replace(/&/g, "&amp;")
       .replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
+  /* 去重音归一化：让无重音输入(perche)也能匹配带重音词(perché)、citta→città、piu→più */
+  function foldAcc(s) {
+    return String(s == null ? "" : s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  }
 
   /* ---------- localStorage ---------- */
   function loadLS() {
@@ -648,6 +652,7 @@
   var searchTimer = null;
   function doSearch(q) {
     q = (q || "").trim().toLowerCase();
+    var fq = foldAcc(q);
     var box = el("searchResults");
     if (!q) { box.classList.add("hidden"); content.classList.remove("hidden"); return; }
     loadAll(function () {
@@ -658,7 +663,7 @@
           var push = function (es, zh, pos) {
             var k = es + "|" + zh;
             if (seen[k]) return; seen[k] = 1;
-            if (es.toLowerCase().indexOf(q) >= 0 || zh.toLowerCase().indexOf(q) >= 0)
+            if (foldAcc(es).indexOf(fq) >= 0 || foldAcc(zh).indexOf(fq) >= 0)
               res.push({ es: es, zh: zh, pos: pos, f: f, s: s });
           };
           s.w.forEach(function (x) { push(x[1], x[0], x[2]); });
