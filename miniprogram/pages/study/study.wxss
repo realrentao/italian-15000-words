@@ -1,0 +1,40 @@
+.tabs { display: flex; padding: 16rpx 24rpx 0; }
+.tab { flex: 1; text-align: center; padding: 16rpx; font-size: 28rpx; color: #5f6b7a; border-bottom: 4rpx solid transparent; }
+.tab.on { color: #008C45; border-bottom-color: #008C45; font-weight: 500; }
+
+.stat { text-align: center; color: #8a9099; font-size: 24rpx; padding: 16rpx; }
+
+.card, .quiz, .spell, .done {
+  margin: 24rpx; background: #fff; border-radius: 20rpx; padding: 48rpx 32rpx;
+  min-height: 480rpx; display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.cf-es { font-size: 52rpx; color: #008C45; font-weight: 500; text-align: center; }
+.cf-ipa { color: #5f6b7a; font-size: 26rpx; margin-top: 12rpx; }
+.cf-zh { font-size: 44rpx; text-align: center; }
+.cf-py { color: #8a9099; font-size: 26rpx; margin-top: 12rpx; }
+.cf-spk { margin-top: 24rpx; padding: 14rpx 32rpx; border-radius: 40rpx; background: #008C45; color: #fff; font-size: 28rpx; }
+.cf-spk.zh { background: #c0392b; }
+.cf-fem { color: #c0392b; font-size: 26rpx; margin-top: 12rpx; }
+.cf-hint { color: #8a9099; font-size: 24rpx; margin-top: 24rpx; }
+
+.foot { display: flex; gap: 24rpx; margin-top: 32rpx; }
+.btn { padding: 18rpx 48rpx; border-radius: 12rpx; background: #eef0f2; border: none; font-size: 28rpx; }
+.btn.primary { background: #008C45; color: #fff; }
+
+.qp-zh { font-size: 40rpx; text-align: center; }
+.qp-py { color: #8a9099; font-size: 26rpx; margin-top: 10rpx; }
+.spk-row { display: flex; gap: 16rpx; margin-top: 20rpx; }
+.qp-rev { margin-top: 20rpx; font-size: 24rpx; color: #008C45; text-decoration: underline; }
+.opts { width: 100%; margin-top: 32rpx; display: flex; flex-direction: column; gap: 16rpx; }
+.opt { padding: 22rpx; border-radius: 12rpx; background: #f5f6f8; font-size: 30rpx; text-align: center; }
+.opt.correct { background: #eaf3de; color: #0f6e56; }
+.opt.wrong { background: #fceb42; color: #a32d2d; }
+
+.sp-in { display: flex; gap: 16rpx; margin-top: 28rpx; width: 100%; }
+.sp-input { flex: 1; border: 1rpx solid #d0d3d6; border-radius: 12rpx; padding: 16rpx 20rpx; font-size: 28rpx; }
+.sp-fb { margin-top: 20rpx; font-size: 28rpx; }
+.sp-fb.ok { color: #0f6e56; }
+.sp-fb.wrong { color: #a32d2d; }
+
+.dt { font-size: 40rpx; font-weight: 500; color: #008C45; }
+.ds { color: #8a9099; font-size: 28rpx; margin: 16rpx 0 28rpx; }

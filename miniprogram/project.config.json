@@ -1,0 +1,22 @@
+{
+  "description": "意大利语单词随身背 微信小程序",
+  "packOptions": {
+    "ignore": [
+      { "type": "folder", "value": "cdn-staging" },
+      { "type": "folder", "value": "tools" }
+    ]
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "bigPackageSizeSupport": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.0.0",
+  "appid": "touristappid",
+  "projectname": "italian-15000-words-mp"
+}

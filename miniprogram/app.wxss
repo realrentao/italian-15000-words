@@ -1,0 +1,23 @@
+/* app.wxss — 全局样式（意大利国旗绿白红） */
+page {
+  background: #f5f6f8;
+  color: #1f2329;
+  font-size: 28rpx;
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", Helvetica, sans-serif;
+}
+.bar-bg { background: #008C45; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12rpx 24rpx; border-radius: 12rpx; background: #eef0f2; color: #1f2329;
+  font-size: 26rpx; border: none;
+}
+.btn.primary { background: #008C45; color: #fff; }
+.btn.ghost { background: #fff; border: 1rpx solid #d0d3d6; }
+.muted { color: #8a9099; }
+.es { color: #008C45; font-weight: 500; }
+.zh { color: #1f2329; }
+.pos { color: #c0392b; font-size: 22rpx; margin-left: 8rpx; }
+.ipa { color: #5f6b7a; font-size: 22rpx; }
+.py { color: #8a9099; font-size: 22rpx; }
+.row { padding: 20rpx 24rpx; border-bottom: 1rpx solid #eceef0; background: #fff; }
+.flag-line { height: 8rpx; background: linear-gradient(90deg, #008C45 0 33.33%, #fff 33.33% 66.66%, #CE2B37 66.66% 100%); }

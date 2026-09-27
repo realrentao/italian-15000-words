@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "小节",
+  "usingComponents": {
+    "player-bar": "/components/player-bar/player-bar"
+  }
+}

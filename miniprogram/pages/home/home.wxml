@@ -1,0 +1,41 @@
+<view class="flag-line"></view>
+
+<!-- 继续学习 -->
+<view class="hero" bindtap="continueStudy">
+  <view class="hero-t">继续学习</view>
+  <view class="hero-s">{{ last ? (last.gname + ' › ' + last.pname + ' › ' + last.sname) : '从第一小节开始' }}</view>
+  <view class="hero-go">▶ 进入</view>
+</view>
+
+<view class="hint">共 {{ grupos.length }} 大篇 · {{ parteCount }} 大类 · {{ secTotal }} 小节 · 已学 {{ doneCount }}</view>
+
+<!-- 三级目录：大篇 → 大类 → 小节 -->
+<view class="tree">
+  <view class="grupo" wx:for="{{ grupos }}" wx:key="name" wx:for-index="gi">
+    <view class="grupo-hd" bindtap="toggleG" data-i="{{ gi }}">
+      <text class="caret">{{ openG === gi ? '▾' : '▸' }}</text>
+      <text class="gname">{{ item.name }}</text>
+      <text class="gcount">{{ item.partes.length }}</text>
+    </view>
+
+    <view wx:if="{{ openG === gi }}">
+      <view class="parte" wx:for="{{ item.partes }}" wx:for-item="p" wx:key="gid" wx:for-index="pi">
+        <view class="parte-hd" bindtap="toggleP" data-k="{{ gi }}-{{ pi }}">
+          <text class="caret">{{ openP === (gi + '-' + pi) ? '▾' : '▸' }}</text>
+          <text class="pno">{{ p.no }}</text>
+          <text class="pname">{{ p.name }}</text>
+        </view>
+
+        <view wx:if="{{ openP === (gi + '-' + pi) }}">
+          <view class="sec {{ doneMap[p.gid + '-' + s.no] ? 'done' : '' }}"
+                wx:for="{{ p.secs }}" wx:for-item="s" wx:key="no"
+                bindtap="openSec" data-gid="{{ p.gid }}" data-sno="{{ s.no }}">
+            <text class="sno">{{ s.no }}</text>
+            <text class="sname">{{ s.name }}</text>
+            <text wx:if="{{ doneMap[p.gid + '-' + s.no] }}" class="sdot">✓</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

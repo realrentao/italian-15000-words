@@ -1,0 +1,67 @@
+<view class="tabs">
+  <view class="tab {{ mode === 'card' ? 'on' : '' }}" data-m="card" bindtap="setMode">闪卡</view>
+  <view class="tab {{ mode === 'quiz' ? 'on' : '' }}" data-m="quiz" bindtap="setMode">测验</view>
+  <view class="tab {{ mode === 'spell' ? 'on' : '' }}" data-m="spell" bindtap="setMode">拼写</view>
+</view>
+
+<view class="stat">进度 {{ total ? (i + (finished ? 0 : 1)) : 0 }}/{{ total }} · 认识 {{ known }} · 待巩固 {{ unknown }}</view>
+
+<!-- 闪卡 -->
+<view wx:if="{{ mode === 'card' && cur && !finished }}" class="card" bindtap="flip">
+  <block wx:if="{{ !flipped }}">
+    <view class="cf-es">{{ cur.es }}</view>
+    <view wx:if="{{ cur.ipa }}" class="cf-ipa">/{{ cur.ipa }}/</view>
+    <view class="cf-spk" data-a="{{ cur.ae }}" data-a2="{{ cur.af }}" bindtap="speakIt">🔊 意语</view>
+    <view wx:if="{{ cur.fem }}" class="cf-fem">♀ {{ cur.fem }}</view>
+    <view class="cf-hint">点击卡片翻面</view>
+  </block>
+  <block wx:else>
+    <view class="cf-zh">{{ cur.zh }}</view>
+    <view wx:if="{{ cur.py }}" class="cf-py">{{ cur.py }}</view>
+    <view class="cf-spk zh" data-a="{{ cur.az }}" bindtap="speakZh">🔊 中文</view>
+    <view class="foot">
+      <button class="btn" bindtap="grade" data-k="0">不认识</button>
+      <button class="btn primary" bindtap="grade" data-k="1">认识</button>
+    </view>
+  </block>
+</view>
+
+<!-- 测验 -->
+<view wx:if="{{ mode === 'quiz' && cur && !finished }}" class="quiz">
+  <view class="qp-zh">{{ quizShow }}</view>
+  <view wx:if="{{ cur.py }}" class="qp-py">{{ cur.py }}</view>
+  <view class="spk-row">
+    <view class="cf-spk" data-a="{{ cur.ae }}" bindtap="speakIt">🔊 意语</view>
+    <view class="cf-spk zh" data-a="{{ cur.az }}" bindtap="speakZh">🔊 中文</view>
+  </view>
+  <view class="qp-rev" bindtap="toggleQuizRev">{{ quizRev ? '↔ 看意语选中文' : '↔ 看中文选意语' }}</view>
+  <view class="opts">
+    <view wx:for="{{ quizOpts }}" wx:key="*this"
+          class="opt {{ quizChosen ? (item === quizAns ? 'correct' : (item === quizChosen ? 'wrong' : '')) : '' }}"
+          data-es="{{ item }}" bindtap="choose">{{ item }}</view>
+  </view>
+</view>
+
+<!-- 拼写 -->
+<view wx:if="{{ mode === 'spell' && cur && !finished }}" class="spell">
+  <view class="sp-zh">{{ cur.zh }}</view>
+  <view wx:if="{{ cur.py }}" class="sp-py">{{ cur.py }}</view>
+  <view class="cf-spk zh" data-a="{{ cur.az }}" bindtap="speakZh">🔊 中文</view>
+  <view class="sp-in">
+    <input class="sp-input" value="{{ spellVal }}" bindinput="onSpell" placeholder="输入意语单词…" confirm-type="done" bindconfirm="check" />
+    <button class="btn primary" bindtap="check">检查</button>
+  </view>
+  <view wx:if="{{ spellFb }}" class="sp-fb {{ spellOk ? 'ok' : 'wrong' }}">{{ spellFb }}</view>
+  <view wx:if="{{ spellFb }}" class="foot">
+    <button class="btn" bindtap="nextWord">下一词</button>
+    <button class="btn" bindtap="grade" data-k="0">不认识</button>
+    <button class="btn primary" bindtap="grade" data-k="1">认识</button>
+  </view>
+</view>
+
+<!-- 完成 -->
+<view wx:if="{{ finished }}" class="done">
+  <view class="dt">本轮完成 🎉</view>
+  <view class="ds">共 {{ total }} 张 · 认识 {{ known }} · 待巩固 {{ unknown }}</view>
+  <button class="btn primary" bindtap="restart">再来一轮</button>
+</view>

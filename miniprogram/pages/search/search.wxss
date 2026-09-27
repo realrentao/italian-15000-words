@@ -1,0 +1,9 @@
+.box { display: flex; align-items: center; margin: 24rpx; background: #fff; border-radius: 14rpx; padding: 8rpx 20rpx; }
+.inp { flex: 1; height: 64rpx; font-size: 28rpx; }
+.clr { color: #8a9099; padding: 12rpx; }
+.hint { padding: 0 24rpx 8rpx; color: #8a9099; font-size: 24rpx; }
+.list { padding: 0 24rpx; }
+.item { background: #fff; border-radius: 14rpx; padding: 20rpx 24rpx; margin-bottom: 16rpx; }
+.es { font-size: 30rpx; color: #008C45; font-weight: 500; }
+.zh { font-size: 28rpx; color: #1f2329; margin-top: 6rpx; }
+.pos { font-size: 22rpx; color: #8a9099; margin-top: 6rpx; }

@@ -1,0 +1,26 @@
+.card { margin: 24rpx; background: #fff; border-radius: 16rpx; padding: 24rpx; }
+.title { font-size: 30rpx; font-weight: 500; margin-bottom: 16rpx; }
+.grid { display: flex; flex-wrap: wrap; }
+.cell { width: 50%; text-align: center; padding: 16rpx 0; }
+.num { font-size: 40rpx; color: #008C45; font-weight: 500; }
+.lab { font-size: 24rpx; color: #8a9099; margin-top: 4rpx; }
+.row { display: flex; align-items: center; justify-content: space-between; padding: 16rpx 0; border-top: 1rpx solid #f5f6f8; }
+.val { color: #008C45; }
+.danger { text-align: center; color: #a32d2d; padding: 16rpx; }
+.tip { padding: 0 24rpx 40rpx; color: #8a9099; font-size: 22rpx; line-height: 1.6; }
+.review-card { display: flex; align-items: center; justify-content: space-between; }
+.rc-t { font-size: 30rpx; font-weight: 500; color: #008C45; }
+.rc-d { font-size: 24rpx; color: #8a9099; margin-top: 6rpx; }
+.rc-go { color: #008C45; font-size: 28rpx; }
+
+/* 打卡卡片 */
+.checkin-card { background: linear-gradient(135deg, #008C45, #00a85a); color: #fff; }
+.ci-top { display: flex; align-items: center; justify-content: space-between; }
+.ci-streak { display: flex; align-items: baseline; }
+.ci-num { font-size: 56rpx; font-weight: 700; margin-right: 12rpx; }
+.ci-unit { font-size: 26rpx; opacity: .92; }
+.ci-btn { background: #fff; color: #008C45; font-size: 28rpx; padding: 14rpx 38rpx; border-radius: 40rpx; font-weight: 500; }
+.ci-btn.done { background: rgba(255,255,255,.22); color: #fff; }
+.ci-week { display: flex; justify-content: space-between; margin-top: 24rpx; }
+.ci-dot { width: 56rpx; height: 56rpx; border-radius: 50%; background: rgba(255,255,255,.22); }
+.ci-dot.on { background: #ffd666; }

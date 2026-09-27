@@ -1,0 +1,97 @@
+<view class="crumb">{{ grupoName }} › {{ parteName }} · {{ secName }}</view>
+
+<view class="sec-head">
+  <view class="sec-title">{{ secName }}</view>
+  <view class="sec-ops">
+    <button class="mini {{ done ? 'on' : '' }}" bindtap="markDone">{{ done ? '✓ 已学完' : '标记学完' }}</button>
+    <button class="mini primary" bindtap="startStudy">学</button>
+  </view>
+</view>
+
+<view class="counts">
+  <text>终极分类词 {{ w.length }}</text>
+  <text>经典实用句 {{ s.length }}</text>
+  <text>词汇大拓展 {{ e.length }}</text>
+</view>
+
+<!-- 范围连播 -->
+<view class="range-bar">
+  <view class="seg {{ range === 'block' ? 'on' : '' }}" data-r="block" bindtap="setRange">本小节</view>
+  <view class="seg {{ range === 'parte' ? 'on' : '' }}" data-r="parte" bindtap="setRange">本篇</view>
+  <view class="seg {{ range === 'book' ? 'on' : '' }}" data-r="book" bindtap="setRange">全书</view>
+  <button class="mini primary" bindtap="playRange">▶ 连播本范围</button>
+</view>
+
+<!-- 终极分类词 -->
+<view wx:if="{{ w.length }}" class="block">
+  <view class="block-hd">
+    <text class="bt">终极分类词</text>
+    <button class="mini" data-kind="w" bindtap="playBlock">▶ 连播本组</button>
+  </view>
+  <view wx:for="{{ w }}" wx:key="index" class="row {{ curUid === ('u'+gid+'_'+sno+'_w_'+index) ? 'cur' : '' }}">
+    <view class="body">
+      <view class="es-line">
+        <text class="es" data-a="{{ item[3] }}" bindtap="say">{{ item[1] }}</text>
+        <text wx:if="{{ item[2] }}" class="pos">{{ item[2] }}</text>
+      </view>
+      <view wx:if="{{ item[6] }}" class="ipa">/{{ item[6] }}/</view>
+      <view class="zh-line">
+        <text class="zh" data-a="{{ item[4] }}" bindtap="say">{{ item[0] }}</text>
+        <text wx:if="{{ item[5] }}" class="py">{{ item[5] }}</text>
+      </view>
+      <view wx:if="{{ item[7] }}" class="fem" data-a="{{ item[3] }}" data-a2="{{ item[7] }}" bindtap="saySeq">♀ {{ item[8] }}</view>
+    </view>
+    <view class="spk">
+      <view class="spk-btn" data-a="{{ item[3] }}" data-a2="{{ item[7] }}" bindtap="saySeq">🔊</view>
+      <view class="spk-btn zh" data-a="{{ item[4] }}" bindtap="say">汉</view>
+    </view>
+  </view>
+</view>
+
+<!-- 经典实用句 -->
+<view wx:if="{{ s.length }}" class="block">
+  <view class="block-hd">
+    <text class="bt">经典实用句</text>
+    <button class="mini" data-kind="s" bindtap="playBlock">▶ 连播本组</button>
+  </view>
+  <view wx:for="{{ s }}" wx:key="index" class="row sent {{ curUid === ('u'+gid+'_'+sno+'_s_'+index) ? 'cur' : '' }}">
+    <view class="body">
+      <view class="es-line"><text class="es" data-a="{{ item[3] }}" bindtap="say">{{ item[0] }}</text></view>
+      <view wx:if="{{ item[6] }}" class="ipa">/{{ item[6] }}/</view>
+      <view class="zh-line"><text class="zh" data-a="{{ item[4] }}" bindtap="say">{{ item[1] }}</text></view>
+      <view wx:if="{{ item[5] }}" class="py">{{ item[5] }}</view>
+    </view>
+    <view class="spk">
+      <view class="spk-btn" data-a="{{ item[3] }}" bindtap="say">🔊</view>
+      <view class="spk-btn zh" data-a="{{ item[4] }}" bindtap="say">汉</view>
+    </view>
+  </view>
+</view>
+
+<!-- 词汇大拓展 -->
+<view wx:if="{{ e.length }}" class="block">
+  <view class="block-hd">
+    <text class="bt">词汇大拓展</text>
+    <button class="mini" data-kind="e" bindtap="playBlock">▶ 连播本组</button>
+  </view>
+  <view wx:for="{{ e }}" wx:key="index" class="row {{ curUid === ('u'+gid+'_'+sno+'_e_'+index) ? 'cur' : '' }}">
+    <view class="body">
+      <view class="es-line">
+        <text class="es" data-a="{{ item[3] }}" bindtap="say">{{ item[1] }}</text>
+        <text wx:if="{{ item[2] }}" class="pos">{{ item[2] }}</text>
+      </view>
+      <view wx:if="{{ item[6] }}" class="ipa">/{{ item[6] }}/</view>
+      <view class="zh-line">
+        <text class="zh" data-a="{{ item[4] }}" bindtap="say">{{ item[0] }}</text>
+        <text wx:if="{{ item[5] }}" class="py">{{ item[5] }}</text>
+      </view>
+    </view>
+    <view class="spk">
+      <view class="spk-btn" data-a="{{ item[3] }}" bindtap="say">🔊</view>
+      <view class="spk-btn zh" data-a="{{ item[4] }}" bindtap="say">汉</view>
+    </view>
+  </view>
+</view>
+
+<view style="height: 180rpx;"></view>
+<player-bar />

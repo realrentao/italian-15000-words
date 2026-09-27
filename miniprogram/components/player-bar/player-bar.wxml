@@ -1,0 +1,20 @@
+<view class="player">
+  <view class="ctrls">
+    <view class="ico" bindtap="prev">⏮</view>
+    <view class="play" bindtap="toggle">{{ playing ? '❚❚' : '▶' }}</view>
+    <view class="ico" bindtap="next">⏭</view>
+    <view class="prog">
+      <view class="bar" bindtap="onBarTap">
+        <view class="fill" style="width: {{ total ? ((index+1)/total*100) : 0 }}%"></view>
+      </view>
+      <view class="label">{{ label }}</view>
+    </view>
+  </view>
+  <view class="sub">
+    <picker mode="selector" range="{{ rates }}" value="{{ rateIdx }}" bindchange="onRate">
+      <view class="pill">{{ rates[rateIdx] }}×</view>
+    </picker>
+    <view class="pill {{ loop ? 'on' : '' }}" bindtap="toggleLoop">循环</view>
+    <view class="pill {{ shuffle ? 'on' : '' }}" bindtap="toggleShuffle">随机</view>
+  </view>
+</view>

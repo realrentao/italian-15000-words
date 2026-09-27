@@ -1,0 +1,15 @@
+.player {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  background: #ffffff; border-top: 1rpx solid #e6e8ea;
+  padding: 12rpx 20rpx calc(12rpx + env(safe-area-inset-bottom));
+}
+.ctrls { display: flex; align-items: center; }
+.ico { width: 56rpx; height: 56rpx; display: flex; align-items: center; justify-content: center; font-size: 30rpx; color: #5f6b7a; }
+.play { width: 64rpx; height: 64rpx; border-radius: 50%; background: #008C45; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 28rpx; }
+.prog { flex: 1; margin-left: 12rpx; }
+.bar { height: 10rpx; background: #e6e8ea; border-radius: 6rpx; overflow: hidden; }
+.fill { height: 100%; background: #008C45; }
+.label { font-size: 22rpx; color: #8a9099; margin-top: 6rpx; }
+.sub { display: flex; gap: 16rpx; margin-top: 10rpx; }
+.pill { font-size: 22rpx; padding: 6rpx 18rpx; border-radius: 20rpx; background: #eef0f2; color: #5f6b7a; }
+.pill.on { background: #008C45; color: #fff; }

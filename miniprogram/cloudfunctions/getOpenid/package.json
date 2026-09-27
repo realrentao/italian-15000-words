@@ -1,0 +1,9 @@
+{
+  "name": "getOpenid",
+  "version": "1.0.0",
+  "description": "返回调用者 OPENID，用于小程序进度多端同步",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~2.6.3"
+  }
+}

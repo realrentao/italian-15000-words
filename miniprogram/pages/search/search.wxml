@@ -1,0 +1,17 @@
+<view class="box">
+  <input class="inp" value="{{ q }}" bindinput="input" placeholder="搜索意语单词或中文…" confirm-type="search" />
+  <view wx:if="{{ q }}" class="clr" bindtap="clear">✕</view>
+</view>
+
+<view wx:if="{{ loading }}" class="hint">搜索中…</view>
+<view wx:elif="{{ q && !results.length }}" class="hint">没有匹配的内容</view>
+<view wx:elif="{{ results.length }}" class="hint">找到 {{ results.length }} 条</view>
+
+<view class="list">
+  <view class="item" wx:for="{{ results }}" wx:key="uid"
+        bindtap="open" data-gid="{{ item.gid }}" data-sno="{{ item.sno }}">
+    <view class="es">{{ item.es }}</view>
+    <view class="zh">{{ item.zh }}</view>
+    <view class="pos">{{ item.gname }} · {{ item.pname }}</view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+.hero {
+  margin: 24rpx; padding: 32rpx; border-radius: 20rpx;
+  background: linear-gradient(135deg, #008C45, #0f6e56); color: #fff;
+}
+.hero-t { font-size: 34rpx; font-weight: 500; }
+.hero-s { font-size: 26rpx; opacity: 0.92; margin-top: 8rpx; }
+.hero-go { margin-top: 16rpx; font-size: 26rpx; opacity: 0.95; }
+
+.hint { padding: 0 24rpx 8rpx; color: #8a9099; font-size: 24rpx; }
+
+.grupo { background: #fff; margin: 16rpx 24rpx; border-radius: 16rpx; overflow: hidden; }
+.grupo-hd { display: flex; align-items: center; padding: 24rpx; font-size: 30rpx; font-weight: 500; }
+.caret { width: 36rpx; color: #008C45; }
+.gname { flex: 1; }
+.gcount { color: #8a9099; font-size: 24rpx; }
+
+.parte { border-top: 1rpx solid #f0f1f3; }
+.parte-hd { display: flex; align-items: center; padding: 20rpx 24rpx 20rpx 48rpx; font-size: 28rpx; }
+.pno { width: 48rpx; color: #5f6b7a; }
+.pname { flex: 1; }
+
+.sec { display: flex; align-items: center; padding: 18rpx 24rpx 18rpx 96rpx; font-size: 26rpx; border-top: 1rpx solid #f5f6f8; }
+.sec.done { color: #0f6e56; }
+.sno { width: 48rpx; color: #8a9099; }
+.sname { flex: 1; }
+.sdot { color: #008C45; }

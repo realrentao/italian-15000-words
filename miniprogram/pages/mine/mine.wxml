@@ -1,0 +1,39 @@
+<view class="flag-line"></view>
+
+<view class="card">
+  <view class="title">学习统计</view>
+  <view class="grid">
+    <view class="cell"><view class="num">{{ doneCount }}</view><view class="lab">已学完小节</view></view>
+    <view class="cell"><view class="num">{{ secTotal }}</view><view class="lab">总小节数</view></view>
+    <view class="cell"><view class="num">{{ dueCount }}</view><view class="lab">待复习</view></view>
+    <view class="cell"><view class="num">{{ srsCount }}</view><view class="lab">复习记录</view></view>
+  </view>
+</view>
+
+<view class="card review-card" bindtap="startReview">
+  <view class="rc-l">
+    <view class="rc-t">开始复习</view>
+    <view class="rc-d">SRS 间隔重复 · 到期 {{ dueCount }} 个</view>
+  </view>
+  <view class="rc-go">去复习 ›</view>
+</view>
+
+<view class="card">
+  <view class="title">设置</view>
+  <view class="row">
+    <text>显示拼音与音标</text>
+    <switch checked="{{ showPron }}" bindchange="togglePron" color="#008C45" />
+  </view>
+  <view class="row">
+    <text>默认语速</text>
+    <picker mode="selector" range="{{ rates }}" value="{{ rateIdx }}" bindchange="onRate">
+      <view class="val">{{ rates[rateIdx] }}×</view>
+    </picker>
+  </view>
+</view>
+
+<view class="card">
+  <view class="danger" bindtap="clearProgress">清空学习进度</view>
+</view>
+
+<view class="tip">进度、复习与打卡记录保存本机；在 app.js 配置云环境后自动多设备同步。</view>
